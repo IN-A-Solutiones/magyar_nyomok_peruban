@@ -2,6 +2,8 @@
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
+  padding-top: calc(2rem + 70px);
+  /* Account for navbar height */
   text-align: center;
   display: flex;
   flex-direction: column;
