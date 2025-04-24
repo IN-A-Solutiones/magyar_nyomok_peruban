@@ -1,17 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { images } from "../data/images";
 import "./LandingPage.css";
 
 const LandingPage = () => {
-  const { t } = useTranslation();
-
-  const images = [
-    { id: 1, path: "/images/image1.jpg", alt: "Image 1" },
-    { id: 2, path: "/images/image2.jpg", alt: "Image 2" },
-    { id: 3, path: "/images/image3.jpg", alt: "Image 3" },
-    { id: 4, path: "/images/image4.jpg", alt: "Image 4" },
-  ];
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
 
   return (
     <div className="landing-page">
@@ -20,7 +15,8 @@ const LandingPage = () => {
       <div className="image-grid">
         {images.map((image) => (
           <Link to={`/image/${image.id}`} key={image.id} className="image-card">
-            <img src={image.path} alt={image.alt} />
+            <img src={image.imageUrl} alt={image.title[currentLanguage]} />
+            <div className="image-title">{image.title[currentLanguage]}</div>
           </Link>
         ))}
       </div>

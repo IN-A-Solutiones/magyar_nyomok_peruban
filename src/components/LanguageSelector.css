@@ -7,17 +7,22 @@
   z-index: 1000;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
 }
 
 .language-button {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   background-color: white;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: clamp(0.8rem, 2vw, 1rem);
   white-space: nowrap;
+  color: var(--text-color);
 }
 
 .language-button:hover {
@@ -25,12 +30,19 @@
 }
 
 .language-button.active {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: white;
-  border-color: #007bff;
+  border-color: var(--primary-color);
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .language-selector {
+    top: 15px;
+    right: 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .language-selector {
     top: 10px;
@@ -39,7 +51,7 @@
   }
 
   .language-button {
-    padding: 6px 12px;
+    padding: 0.4rem 0.8rem;
   }
 }
 
@@ -47,12 +59,13 @@
   .language-selector {
     position: static;
     justify-content: center;
-    margin: 10px 0;
-    padding: 0 10px;
+    margin: 10px auto;
+    width: calc(100% - 20px);
+    max-width: 400px;
   }
 
   .language-button {
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
 }

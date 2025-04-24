@@ -1,10 +1,11 @@
 {
-  "title": "Huellas Húngaras en Perú y Bolivia",
-  "selectImage": "Selecciona una imagen",
-  "home": "Inicio",
-  "imageDetails": {
-    "title": "Detalles de la imagen",
-    "description": "Descripción",
-    "back": "Volver al inicio"
+  "title": "Huellas Húngaras en Perú",
+  "selectImage": "Selecciona una imagen para ver",
+  "back": "Volver",
+  "footer": {
+    "embassy": "Embajada de Hungría en Lima",
+    "address": "Avenida Jorge Basadre 1580, San Isidro, Lima",
+    "phone": "Teléfono: +51-1-620-9520; +51-1-620-9521",
+    "rights": "Todos los derechos reservados a la Embajada de Hungría en Lima"
   }
 } 
