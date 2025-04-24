@@ -1,0 +1,10 @@
+{
+  "title": "Huellas Húngaras en Perú y Bolivia",
+  "selectImage": "Selecciona una imagen",
+  "home": "Inicio",
+  "imageDetails": {
+    "title": "Detalles de la imagen",
+    "description": "Descripción",
+    "back": "Volver al inicio"
+  }
+} 
