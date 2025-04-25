@@ -145,13 +145,6 @@ const Navbar = () => {
           >
             {t("nav.map")}
           </Link>
-          <Link
-            to="/#about"
-            onClick={() => scrollToSection("about")}
-            className={`nav-link ${location.hash === "#about" ? "active" : ""}`}
-          >
-            {t("nav.about")}
-          </Link>
           <div className="mobile-language-selector">
             {languages.map((lang) => (
               <button

@@ -13,6 +13,9 @@ const LandingPage = () => {
     <div className="landing-page">
       <section className="hero-section">
         <h1>{t("title")}</h1>
+        <div className="about-content">
+          <p>{t("about.description")}</p>
+        </div>
         <p>{t("selectImage")}</p>
         <div className="image-grid">
           {locations.map((location) => (
@@ -33,13 +36,6 @@ const LandingPage = () => {
       <section id="map" className="map-section">
         <h2>{t("nav.map")}</h2>
         <Map />
-      </section>
-
-      <section id="about" className="about-section">
-        <h2>{t("nav.about")}</h2>
-        <div className="about-content">
-          <p>{t("about.description")}</p>
-        </div>
       </section>
     </div>
   );
