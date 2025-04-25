@@ -17,9 +17,6 @@ const ImageDetail = () => {
 
   return (
     <div className="image-detail">
-      <Link to="/" className="back-button">
-        {t("home")}
-      </Link>
       <div className="image-container">
         <img src={`/images/image${id}.jpg`} alt={imageDetails[id].title} />
       </div>
