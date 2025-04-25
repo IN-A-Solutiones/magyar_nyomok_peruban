@@ -9,10 +9,12 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isLocationsOpen, setIsLocationsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const currentLanguage = i18n.language;
   const dropdownRef = useRef(null);
+  const mobileMenuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +32,12 @@ const Navbar = () => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsLocationsOpen(false);
       }
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
+        setIsMobileMenuOpen(false);
+      }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -42,8 +50,15 @@ const Navbar = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
     }
   };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const isHomeActive = location.pathname === "/" && !location.hash;
 
   return (
     <nav className={`navbar ${isVisible ? "visible" : "hidden"}`}>
@@ -51,10 +66,27 @@ const Navbar = () => {
         <Link to="/" className="navbar-logo">
           <img src="/images/logo.png" alt="" />
         </Link>
-        <div className="navbar-menu">
+
+        <button className="hamburger-menu" onClick={toggleMobileMenu}>
+          <span
+            className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
+          ></span>
+          <span
+            className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
+          ></span>
+          <span
+            className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
+          ></span>
+        </button>
+
+        <div
+          className={`navbar-menu ${isMobileMenuOpen ? "open" : ""}`}
+          ref={mobileMenuRef}
+        >
           <Link
             to="/"
-            className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
+            className={`nav-link ${isHomeActive ? "active" : ""}`}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             {t("nav.home")}
           </Link>
@@ -72,7 +104,10 @@ const Navbar = () => {
                     key={location.id}
                     to={`/location/${location.id}`}
                     className="dropdown-item"
-                    onClick={() => setIsLocationsOpen(false)}
+                    onClick={() => {
+                      setIsLocationsOpen(false);
+                      setIsMobileMenuOpen(false);
+                    }}
                   >
                     {location.title[currentLanguage]}
                   </Link>
@@ -81,16 +116,16 @@ const Navbar = () => {
             )}
           </div>
           <Link
-            to="/"
+            to="/#map"
             onClick={() => scrollToSection("map")}
-            className="nav-link"
+            className={`nav-link ${location.hash === "#map" ? "active" : ""}`}
           >
             {t("nav.map")}
           </Link>
           <Link
-            to="/"
+            to="/#about"
             onClick={() => scrollToSection("about")}
-            className="nav-link"
+            className={`nav-link ${location.hash === "#about" ? "active" : ""}`}
           >
             {t("nav.about")}
           </Link>
