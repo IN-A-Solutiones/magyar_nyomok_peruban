@@ -11,7 +11,7 @@ export const locations = [
       es: "Referencia húngara en un mural cerca de la ciudad de los incas.",
       qu: "Hungaruyuq rimay muralpi, inka llaqtap qayllanpi.",
     },
-    image: "/images/mural_aguas_calientes.jpg",
+    image: "/images/mural_aguas_calientes.png",
     coordinates: {
       lat: -13.1588,
       lng: -72.5314,
@@ -80,7 +80,7 @@ export const locations = [
       es: "Plaza nombrada en honor al poeta húngaro Sándor Petőfi en Bolivia.",
       qu: "Sutichasqa hungaruyuq harawiq Sándor Petőfip sutin, Wuliwyapi.",
     },
-    image: "/images/plaza_petofi.jpg",
+    image: "/images/plaza_petofi.jpeg",
     coordinates: {
       lat: -16.5,
       lng: -68.15,
