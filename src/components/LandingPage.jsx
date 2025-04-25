@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { images } from "../data/images";
 import "./LandingPage.css";
+import Map from "./Map";
 
 const LandingPage = () => {
   const { t, i18n } = useTranslation();
@@ -20,6 +21,7 @@ const LandingPage = () => {
           </Link>
         ))}
       </div>
+      <Map />
     </div>
   );
 };
