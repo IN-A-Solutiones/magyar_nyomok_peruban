@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { images } from "../data/images";
+import { locations } from "../data/locations";
 import "./LandingPage.css";
 import Map from "./Map";
 
@@ -15,14 +15,16 @@ const LandingPage = () => {
         <h1>{t("title")}</h1>
         <p>{t("selectImage")}</p>
         <div className="image-grid">
-          {images.map((image) => (
+          {locations.map((location) => (
             <Link
-              to={`/image/${image.id}`}
-              key={image.id}
+              to={`/location/${location.id}`}
+              key={location.id}
               className="image-card"
             >
-              <img src={image.imageUrl} alt={image.title[currentLanguage]} />
-              <div className="image-title">{image.title[currentLanguage]}</div>
+              <img src={location.image} alt={location.title[currentLanguage]} />
+              <div className="image-title">
+                {location.title[currentLanguage]}
+              </div>
             </Link>
           ))}
         </div>

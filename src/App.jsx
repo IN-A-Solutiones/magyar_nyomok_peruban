@@ -17,7 +17,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/image/:id" element={<ImageDetail />} />
+            <Route path="/location/:id" element={<ImageDetail />} />
           </Routes>
           <Footer />
         </div>

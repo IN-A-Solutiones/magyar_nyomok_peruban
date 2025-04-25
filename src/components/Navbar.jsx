@@ -3,7 +3,7 @@ import LanguageSelector from "./LanguageSelector";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { images } from "../data/images";
+import { locations } from "../data/locations";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -67,14 +67,14 @@ const Navbar = () => {
             </button>
             {isLocationsOpen && (
               <div className="dropdown-content">
-                {images.map((image) => (
+                {locations.map((location) => (
                   <Link
-                    key={image.id}
-                    to={`/image/${image.id}`}
+                    key={location.id}
+                    to={`/location/${location.id}`}
                     className="dropdown-item"
                     onClick={() => setIsLocationsOpen(false)}
                   >
-                    {image.title[currentLanguage]}
+                    {location.title[currentLanguage]}
                   </Link>
                 ))}
               </div>
