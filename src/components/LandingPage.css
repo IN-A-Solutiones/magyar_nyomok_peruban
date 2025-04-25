@@ -19,9 +19,18 @@
 }
 
 .hero-section h1 {
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
-  margin-bottom: 1.5rem;
-  color: var(--primary-color);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  margin-bottom: 2rem;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/title_bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
 }
 
 .about-content {
@@ -107,13 +116,13 @@
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .landing-page {
-    padding: 1.5rem;
+    padding: calc(2rem + 70px) 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .landing-page {
-    padding: 1rem;
+    padding: calc(2rem + 60px) 1rem;
   }
 
   .image-grid {
@@ -123,7 +132,7 @@
 
 @media (max-width: 480px) {
   .landing-page {
-    padding: 0.75rem;
+    padding: calc(2rem + 40px) 0.75rem;
   }
 
   .image-grid {
