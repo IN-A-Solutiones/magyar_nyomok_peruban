@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LanguageSelector from "./LanguageSelector";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -20,9 +21,9 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isVisible ? "visible" : "hidden"}`}>
       <div className="navbar-content">
-        <div className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           <img src="/images/logo.png" alt="" />
-        </div>
+        </Link>
         <div className="navbar-language">
           <LanguageSelector />
         </div>
