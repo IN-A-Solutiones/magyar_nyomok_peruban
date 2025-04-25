@@ -11,17 +11,34 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page">
-      <h1>{t("title")}</h1>
-      <p>{t("selectImage")}</p>
-      <div className="image-grid">
-        {images.map((image) => (
-          <Link to={`/image/${image.id}`} key={image.id} className="image-card">
-            <img src={image.imageUrl} alt={image.title[currentLanguage]} />
-            <div className="image-title">{image.title[currentLanguage]}</div>
-          </Link>
-        ))}
-      </div>
-      <Map />
+      <section className="hero-section">
+        <h1>{t("title")}</h1>
+        <p>{t("selectImage")}</p>
+        <div className="image-grid">
+          {images.map((image) => (
+            <Link
+              to={`/image/${image.id}`}
+              key={image.id}
+              className="image-card"
+            >
+              <img src={image.imageUrl} alt={image.title[currentLanguage]} />
+              <div className="image-title">{image.title[currentLanguage]}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section id="map" className="map-section">
+        <h2>{t("nav.map")}</h2>
+        <Map />
+      </section>
+
+      <section id="about" className="about-section">
+        <h2>{t("nav.about")}</h2>
+        <div className="about-content">
+          <p>{t("about.description")}</p>
+        </div>
+      </section>
     </div>
   );
 };
