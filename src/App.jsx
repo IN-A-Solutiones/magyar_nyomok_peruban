@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { I18nextProvider } from "react-i18next";
 import LandingPage from "./components/LandingPage";
 import ImageDetail from "./components/ImageDetail";
-import LanguageSelector from "./components/LanguageSelector";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import i18n from "./i18n/config";

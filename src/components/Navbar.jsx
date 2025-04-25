@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import LanguageSelector from "./LanguageSelector";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -15,6 +14,17 @@ const Navbar = () => {
   const currentLanguage = i18n.language;
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
+  const hamburgerRef = useRef(null);
+
+  const languages = [
+    { code: "hu", label: "Magyar" },
+    { code: "es", label: "Español" },
+    { code: "qu", label: "Quechua" },
+  ];
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,14 +39,16 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setIsLocationsOpen(false);
-      }
       if (
         mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(event.target)
+        !mobileMenuRef.current.contains(event.target) &&
+        !hamburgerRef.current.contains(event.target)
       ) {
         setIsMobileMenuOpen(false);
+        setIsLocationsOpen(false);
+      }
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsLocationsOpen(false);
       }
     };
 
@@ -51,11 +63,15 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
+      setIsLocationsOpen(false);
     }
   };
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
+    if (isMobileMenuOpen) {
+      setIsLocationsOpen(false);
+    }
   };
 
   const isHomeActive = location.pathname === "/" && !location.hash;
@@ -67,7 +83,11 @@ const Navbar = () => {
           <img src="/images/logo.png" alt="" />
         </Link>
 
-        <button className="hamburger-menu" onClick={toggleMobileMenu}>
+        <button
+          className="hamburger-menu"
+          onClick={toggleMobileMenu}
+          ref={hamburgerRef}
+        >
           <span
             className={`hamburger-line ${isMobileMenuOpen ? "open" : ""}`}
           ></span>
@@ -86,7 +106,10 @@ const Navbar = () => {
           <Link
             to="/"
             className={`nav-link ${isHomeActive ? "active" : ""}`}
-            onClick={() => setIsMobileMenuOpen(false)}
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              setIsLocationsOpen(false);
+            }}
           >
             {t("nav.home")}
           </Link>
@@ -129,9 +152,36 @@ const Navbar = () => {
           >
             {t("nav.about")}
           </Link>
+          <div className="mobile-language-selector">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                className={`language-button ${
+                  i18n.language === lang.code ? "active" : ""
+                }`}
+                onClick={() => {
+                  changeLanguage(lang.code);
+                  setIsMobileMenuOpen(false);
+                  setIsLocationsOpen(false);
+                }}
+              >
+                {lang.label}
+              </button>
+            ))}
+          </div>
         </div>
-        <div className="navbar-language">
-          <LanguageSelector />
+        <div className="desktop-language-selector">
+          {languages.map((lang) => (
+            <button
+              key={lang.code}
+              className={`language-button ${
+                i18n.language === lang.code ? "active" : ""
+              }`}
+              onClick={() => changeLanguage(lang.code)}
+            >
+              {lang.label}
+            </button>
+          ))}
         </div>
       </div>
     </nav>
