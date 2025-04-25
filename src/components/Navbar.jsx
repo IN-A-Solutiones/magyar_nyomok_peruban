@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import LanguageSelector from "./LanguageSelector";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
@@ -12,6 +12,7 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const currentLanguage = i18n.language;
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +24,19 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsLocationsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -44,7 +58,7 @@ const Navbar = () => {
           >
             {t("nav.home")}
           </Link>
-          <div className="dropdown">
+          <div className="dropdown" ref={dropdownRef}>
             <button
               className={`nav-link ${isLocationsOpen ? "active" : ""}`}
               onClick={() => setIsLocationsOpen(!isLocationsOpen)}
