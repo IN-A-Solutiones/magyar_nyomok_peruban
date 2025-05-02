@@ -26,6 +26,11 @@ export default function Map() {
         center={[-14.5, -70]}
         zoom={5}
         style={{ height: "100%", width: "100%" }}
+        zoomControl={true}
+        doubleClickZoom={false}
+        touchZoom={false}
+        scrollWheelZoom={false}
+        dragging={true}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

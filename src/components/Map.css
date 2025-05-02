@@ -26,3 +26,13 @@
     margin: 1rem 0;
   }
 }
+
+/* Leaflet controls */
+.leaflet-control-container {
+  z-index: 100;
+}
+
+/* Leaflet popup */
+.leaflet-popup {
+  z-index: 1000;
+}
