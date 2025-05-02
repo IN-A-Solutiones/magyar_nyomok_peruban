@@ -4,6 +4,7 @@ import "./ComingSoon.css";
 const ComingSoon = ({ children }) => {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [showPasswordForm, setShowPasswordForm] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,18 +20,28 @@ const ComingSoon = ({ children }) => {
   return (
     <div className="coming-soon">
       <h1>Coming Soon</h1>
-      <form onSubmit={handleSubmit} className="password-form">
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Enter password"
-          className="password-input"
-        />
-        <button type="submit" className="password-button">
-          Submit
+      <div className="password-container">
+        <button
+          className="eye-button"
+          onClick={() => setShowPasswordForm(!showPasswordForm)}
+        >
+          👁️
         </button>
-      </form>
+        {showPasswordForm && (
+          <form onSubmit={handleSubmit} className="password-form">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter password"
+              className="password-input"
+            />
+            <button type="submit" className="password-button">
+              Submit
+            </button>
+          </form>
+        )}
+      </div>
     </div>
   );
 };
