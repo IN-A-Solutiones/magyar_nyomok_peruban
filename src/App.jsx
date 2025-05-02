@@ -10,6 +10,7 @@ import LandingPage from "./components/LandingPage";
 import ImageDetail from "./components/ImageDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ComingSoon from "./components/ComingSoon";
 import i18n from "./i18n/config";
 import "./App.css";
 
@@ -29,14 +30,16 @@ function App() {
     <I18nextProvider i18n={i18n}>
       <Router>
         <ScrollToTop />
-        <div>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/location/:id" element={<ImageDetail />} />
-          </Routes>
-          <Footer />
-        </div>
+        <ComingSoon>
+          <div>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/location/:id" element={<ImageDetail />} />
+            </Routes>
+            <Footer />
+          </div>
+        </ComingSoon>
       </Router>
     </I18nextProvider>
   );
