@@ -41,6 +41,7 @@
 
 .password-form {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   align-items: center;
   background-color: white;
@@ -56,6 +57,11 @@
   font-size: 1rem;
 }
 
+.password-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
 .password-button {
   padding: 0.5rem 1rem;
   background-color: #0f6533;
@@ -67,6 +73,18 @@
   transition: background-color 0.3s;
 }
 
-.password-button:hover {
+.password-button:hover:not(:disabled) {
   background-color: #0a4a26;
+}
+
+.password-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }

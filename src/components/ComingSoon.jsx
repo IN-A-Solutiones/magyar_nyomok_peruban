@@ -5,11 +5,28 @@ const ComingSoon = ({ children }) => {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showPasswordForm, setShowPasswordForm] = useState(false);
+  const [attempts, setAttempts] = useState(0);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === "123456") {
+
+    if (attempts >= 3) {
+      setErrorMessage(
+        "Túl sok sikertelen próbálkozás. Kérjük, próbáld újra később."
+      );
+      return;
+    }
+
+    if (password === import.meta.env.VITE_APP_PASSWORD) {
       setIsAuthenticated(true);
+    } else {
+      setAttempts((prev) => prev + 1);
+      const remainingAttempts = 3 - attempts - 1;
+      setErrorMessage(
+        `Hibás jelszó. Még ${remainingAttempts} próbálkozásod van.`
+      );
+      setPassword("");
     }
   };
 
@@ -35,10 +52,18 @@ const ComingSoon = ({ children }) => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter password"
               className="password-input"
+              disabled={attempts >= 3}
             />
-            <button type="submit" className="password-button">
+            <button
+              type="submit"
+              className="password-button"
+              disabled={attempts >= 3}
+            >
               Submit
             </button>
+            {errorMessage && (
+              <div className="error-message">{errorMessage}</div>
+            )}
           </form>
         )}
       </div>
