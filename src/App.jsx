@@ -10,7 +10,7 @@ import LandingPage from "./components/LandingPage";
 import ImageDetail from "./components/ImageDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ComingSoon from "./components/ComingSoon";
+import ComingSoonWithAnimation from "./components/ComingSoonWithAnimation";
 import i18n from "./i18n/config";
 import "./App.css";
 
@@ -30,7 +30,7 @@ function App() {
     <I18nextProvider i18n={i18n}>
       <Router>
         <ScrollToTop />
-        <ComingSoon>
+        <ComingSoonWithAnimation>
           <div>
             <Navbar />
             <Routes>
@@ -39,7 +39,7 @@ function App() {
             </Routes>
             <Footer />
           </div>
-        </ComingSoon>
+        </ComingSoonWithAnimation>
       </Router>
     </I18nextProvider>
   );

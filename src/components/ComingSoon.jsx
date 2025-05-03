@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LensAnimation from "./LensAnimation";
 import "./ComingSoon.css";
 
 const ComingSoon = ({ children }) => {
@@ -36,6 +37,7 @@ const ComingSoon = ({ children }) => {
 
   return (
     <div className="coming-soon">
+      <LensAnimation />
       <h1>Coming Soon</h1>
       <div className="password-container">
         <button
