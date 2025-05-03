@@ -1,28 +1,30 @@
 {
-  "title": "Hungaruyuq markakuna Piruwpi Wuliwyapipas",
-  "selectImage": "Maypi kasqanmanta akllay",
+  "title": "Ungriyapa Peruwan Boliviawan ñawpaq llaqtankuna",
+  "selectImage": "Llaqtakunamanta akllay",
   "home": "Qallariy",
   "nav": {
     "home": "Qallariy",
-    "locations": "Tiyaykuna",
+    "locations": "Llaqtakuna",
     "map": "Mapa",
     "about": "Ñuqanchikmanta"
   },
   "locations": {
-    "title": "Hungaruyuq tiyaykuna"
+    "title": "Ungriyapa llaqtankuna"
   },
   "about": {
-    "description": "Kay web p'anqaqa Hungaria-Piruw, Hungaria-Wuliwya tinkuyninkunamanta willan. Mapapi, rikch'akunapipas rikuchisqa tiyaykunaqa llapanku Hungariamanta rimayniyuqmi, k'acha ruwasqakunamanta, wasikunamanta, ñawpa pacha ruwaykunamantapas. Kay ruwayqa Hungariapa embajada Lima llaqtapimanta qallarirqan, iskay suyukunapura cultura nintawan ñawpa pacha tinkuyninkunata rikuchinaypaq."
+    "description": "Kay web p'anqa Ungriyapa-Peruwan Ungriyapa-Boliviawan tinkuyninkunamanta willan. Mapapi rikuchisqa llaqtakuna, llimphikunawan rikuchisqa llaqtakuna, tukuy Ungriyapa tinkuyniyuqmi, llimphi ruwaykunamanta, wasi ruwaykunamanta, ñawpaq pacha pachakunamanta. Kay ruwayqa Ungriyapa Lima llaqtapi kamachikuq wasimanta qallarirqan, iskay llaqtakunapa kawsay tinkuyninkunata, ñawpaq pacha tinkuyninkunata rikuchinapaq."
   },
   "imageDetails": {
-    "title": "Imagenpa sut'inchaynin",
-    "description": "Sut'inchay",
+    "title": "Llimphipa sut'inchan",
+    "description": "Sut'inchan",
     "back": "Qallariyman kutiy"
   },
   "footer": {
-    "embassy": "Hungarypa embajada Lima llaqtapi",
+    "embassy": "Ungriyapa Lima llaqtapi kamachikuq wasi",
     "address": "Avenida Jorge Basadre 1580, San Isidro, Lima",
     "phone": "Telefono: +51-1-620-9520; +51-1-620-9521",
-    "rights": "Llapa hayñikuna Hungariapa embajada Lima llaqtapipas"
+    "rights": "Tukuy hayñikuna Ungriyapa Lima llaqtapi kamachikuq wasipaqmi",
+    "followUs": "Qatiway",
+    "design": "Diseño y desarrollo"
   }
 } 

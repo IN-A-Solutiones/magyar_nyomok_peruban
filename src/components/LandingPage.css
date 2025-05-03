@@ -1,7 +1,11 @@
 .landing-page {
   width: 100%;
   min-height: 100vh;
-  background-color: aliceblue;
+  background-image: url('/images/landing-bg.jpg');
+  background-size: cover;
+  background-position: center calc(70px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-top: calc(2rem + 70px);
   /* Account for navbar height */
   text-align: center;
@@ -16,6 +20,9 @@
   margin: 0 auto 4rem;
   padding: 2rem 1rem;
   text-align: center;
+  background-color: #f0f8ff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
 }
 
 .hero-section h1 {
@@ -120,6 +127,9 @@
   max-width: 800px;
   margin: 0 auto 4rem;
   padding: 0 1rem;
+  background-color: #f0f8ff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
 }
 
 .map-section h2 {

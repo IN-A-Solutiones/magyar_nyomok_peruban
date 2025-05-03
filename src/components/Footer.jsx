@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
@@ -43,11 +44,46 @@ const Footer = () => {
           <p>{t("footer.phone")}</p>
         </motion.div>
         <motion.div className="footer-section" variants={itemVariants}>
-          <p className="copyright">
-            &copy; {new Date().getFullYear()} {t("footer.rights")}
+          <div className="social-links">
+            <h3>{t("footer.followUs")}</h3>
+            <div className="social-icons">
+              <a
+                href="https://www.facebook.com/HungriaenLima"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebook className="social-icon" />
+              </a>
+              <a
+                href="https://www.instagram.com/magyar_nyomok_peruban/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="social-icon" />
+              </a>
+            </div>
+          </div>
+        </motion.div>
+        <motion.div className="footer-section" variants={itemVariants}>
+          <p className="design-credit">
+            {t("footer.design")}:{" "}
+            <a
+              href="https://inasolutionssac.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              IN-A Solutions S.A.C.
+            </a>
           </p>
         </motion.div>
       </div>
+      <motion.div className="copyright-section" variants={itemVariants}>
+        <p className="copyright">
+          &copy; {new Date().getFullYear()} {t("footer.rights")}
+        </p>
+      </motion.div>
     </motion.footer>
   );
 };
