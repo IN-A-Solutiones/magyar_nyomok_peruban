@@ -10,30 +10,48 @@
 }
 
 .coming-soon h1 {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: #fff;
-  font-size: 5rem;
+  color: #6679f3;
+  font-size: clamp(2rem, 8vw, 5rem);
   text-align: center;
   margin: 0;
+  padding: 0 1rem;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   animation: pulse 2s infinite;
+  width: 100%;
+  max-width: 1200px;
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 
   50% {
-    transform: scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
   }
 
   100% {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+  .coming-soon h1 {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .coming-soon h1 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    padding: 0 0.25rem;
   }
 }
 
