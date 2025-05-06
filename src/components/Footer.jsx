@@ -56,7 +56,7 @@ const Footer = () => {
                 <FaFacebook className="social-icon" />
               </a>
               <a
-                href="https://www.instagram.com/magyar_nyomok_peruban/"
+                href="https://www.instagram.com/hungriaenlima/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
