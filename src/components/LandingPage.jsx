@@ -60,6 +60,7 @@ const LandingPage = () => {
                 <img
                   src={location.image}
                   alt={location.title[currentLanguage]}
+                  className={`location-image location-image-${location.id}`}
                 />
                 <div className="image-title">
                   {location.title[currentLanguage]}

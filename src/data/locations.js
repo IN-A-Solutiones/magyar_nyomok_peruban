@@ -2,16 +2,16 @@ export const locations = [
   {
     id: "1",
     title: {
-      hu: "Falfestmény Aguas Calientesben",
-      es: "Mural en Aguas Calientes",
-      qu: "Pintura mural Aguas Calientespi",
+      hu: "Perui magyar barátság emlékfala, Aguas Calientes, Peru",
+      es: "Mural de Amistad Hungría–Perú, Aguas Calientes, Perú",
+      qu: "Piruw-Ungriyapa masikuy mural, Aguas Calientes, Piruw",
     },
     description: {
       hu: "Magyar utalás egy falfestményen az inkák városánál.",
       es: "Referencia húngara en un mural cerca de la ciudad de los incas.",
       qu: "Hungaruyuq rimay muralpi, inka llaqtap qayllanpi.",
     },
-    image: "/images/mural_aguas_calientes.png",
+    image: "/images/mural_aguas_calientes.webp",
     coordinates: {
       lat: -13.1588,
       lng: -72.5314,
@@ -25,55 +25,32 @@ export const locations = [
   {
     id: "2",
     title: {
-      hu: "Ébneth Lajos szobrai – Lima",
-      es: "Esculturas de Ébneth Lajos – Lima",
-      qu: "Ébneth Lajospa esculturas – Lima",
+      hu: "Perui–magyar barátság útja, Lima, Peru",
+      es: "Camino de la Amistad Peruano–Húngara, Lima, Perú",
+      qu: "Piruw-Ungriyapa masikuy ñan, Lima, Piruw",
     },
     description: {
-      hu: "Szobrok a Miraflores-i Salazar parkban.",
-      es: "Esculturas en el Parque Salazar de Miraflores.",
-      qu: "Esculturas Miraflores Salazar parquepi.",
+      hu: "Perui–magyar barátság útja, Lima, Peru",
+      es: "Camino de la Amistad Peruano–Húngara, Lima, Perú",
+      qu: "",
     },
-    image: "/images/ebneth_esculturas.jpg",
+    image: "/images/perui_magyar_baratsag_utja.png",
     coordinates: {
       lat: -12.125,
       lng: -77.0344,
     },
     address: {
-      hu: "Parque Salazar, Miraflores, Lima, Peru",
-      es: "Parque Salazar, Miraflores, Lima, Perú",
-      qu: "Salazar parque, Miraflores, Lima, Piruw",
+      hu: "Perui–magyar barátság útja, Lima, Peru",
+      es: "Camino de la Amistad Peruano–Húngara, Lima, Perú",
+      qu: "",
     },
   },
   {
     id: "3",
     title: {
-      hu: "Katedrális – Lima",
-      es: "Catedral – Lima",
-      qu: "Catedral – Lima",
-    },
-    description: {
-      hu: "A főtér katedrálisa, magyar vonatkozás említve.",
-      es: "La catedral en la Plaza Mayor, con referencia húngara.",
-      qu: "Plaza Mayorpi catedral, hungaruyuq rimaywan.",
-    },
-    image: "/images/catedral_lima.jpg",
-    coordinates: {
-      lat: -12.0464,
-      lng: -77.0301,
-    },
-    address: {
-      hu: "Plaza Mayor, Lima történelmi központja, Peru",
-      es: "Plaza Mayor, Centro Histórico de Lima, Perú",
-      qu: "Plaza Mayor, Lima historico centro, Piruw",
-    },
-  },
-  {
-    id: "4",
-    title: {
-      hu: "Petőfi tér – La Paz",
-      es: "Plaza Petőfi – La Paz",
-      qu: "Petőfi plaza – La Paz",
+      hu: "Petőfi tér, La Paz, Bolívia",
+      es: "Cancha Petőfi, La Paz, Bolivia",
+      qu: "Petőfi plaza, La Paz, Wuliwya",
     },
     description: {
       hu: "Tér, amelyet Petőfi Sándorról neveztek el Bolíviában.",
@@ -89,6 +66,29 @@ export const locations = [
       hu: "La Paz, Bolívia",
       es: "La Paz, Bolivia",
       qu: "La Paz, Wuliwya",
+    },
+  },
+  {
+    id: "4",
+    title: {
+      hu: "Santa Cruz-i Magyarország tér, Bolívia",
+      es: "Plaza de Hungría en Santa Cruz, Bolivia",
+      qu: "Santa Cruzpi Ungriyapa plaza, Wuliwya",
+    },
+    description: {
+      hu: "",
+      es: "",
+      qu: "",
+    },
+    image: "/images/santa_cruz_magyarorszag_ter.webp",
+    coordinates: {
+      lat: -12.0464,
+      lng: -77.0301,
+    },
+    address: {
+      hu: "Santa Cruz-i Magyarország tér, Bolívia",
+      es: "Plaza de Hungría en Santa Cruz, Bolivia",
+      qu: "",
     },
   },
 ]; 
