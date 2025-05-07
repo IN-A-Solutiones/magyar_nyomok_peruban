@@ -2,6 +2,7 @@
   "title": "Magyar Nyomok\nPeruban és Bolíviában",
   "selectImage": "Válassz a helyszínek közül",
   "home": "Főoldal",
+  "comingSoon": "Hamarosan...",
   "nav": {
     "home": "Főoldal",
     "locations": "Helyszínek",
@@ -27,4 +28,4 @@
     "followUs": "Kövess minket",
     "design": "Design & fejlesztés"
   }
-} 
+}

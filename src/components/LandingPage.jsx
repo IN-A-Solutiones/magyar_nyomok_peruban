@@ -56,16 +56,30 @@ const LandingPage = () => {
                 delay: 0.4 + index * 0.1,
               }}
             >
-              <Link to={`/location/${location.id}`} className="image-card">
-                <img
-                  src={location.image}
-                  alt={location.title[currentLanguage]}
-                  className={`location-image location-image-${location.id}`}
-                />
-                <div className="image-title">
-                  {location.title[currentLanguage]}
+              {location.id === "1" ? (
+                <Link to={`/location/${location.id}`} className="image-card">
+                  <img
+                    src={location.image}
+                    alt={location.title[currentLanguage]}
+                    className={`location-image location-image-${location.id}`}
+                  />
+                  <div className="image-title">
+                    {location.title[currentLanguage]}
+                  </div>
+                </Link>
+              ) : (
+                <div className="image-card">
+                  <img
+                    src={location.image}
+                    alt={location.title[currentLanguage]}
+                    className={`location-image location-image-${location.id}`}
+                  />
+                  <div className="image-title">
+                    {location.title[currentLanguage]}
+                  </div>
+                  <div className="coming-soon-overlay">{t("comingSoon")}</div>
                 </div>
-              </Link>
+              )}
             </motion.div>
           ))}
         </div>
