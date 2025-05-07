@@ -57,7 +57,7 @@ export const locations = [
       es: "Plaza nombrada en honor al poeta húngaro Sándor Petőfi en Bolivia.",
       qu: "Sutichasqa hungaruyuq harawiq Sándor Petőfip sutin, Wuliwyapi.",
     },
-    image: "/images/plaza_petofi.jpeg",
+    image: "/images/plaza_petofi.webp",
     coordinates: {
       lat: -16.5,
       lng: -68.15,

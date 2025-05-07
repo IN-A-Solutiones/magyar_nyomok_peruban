@@ -117,8 +117,8 @@
 }
 
 .location-image-4 {
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: top;
   background-color: #f0f8ff;
 }
 
