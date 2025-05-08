@@ -195,7 +195,7 @@
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .landing-page {
-    padding: calc(2rem + 70px) 1.5rem;
+    background-color: rgb(240, 223, 145);
   }
 }
 
