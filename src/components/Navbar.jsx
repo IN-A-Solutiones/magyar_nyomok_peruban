@@ -110,19 +110,28 @@ const Navbar = () => {
             </button>
             {isLocationsOpen && (
               <div className="dropdown-content">
-                {locations.map((location) => (
-                  <Link
-                    key={location.id}
-                    to={`/location/${location.id}`}
-                    className="dropdown-item"
-                    onClick={() => {
-                      setIsLocationsOpen(false);
-                      setIsMobileMenuOpen(false);
-                    }}
-                  >
-                    {location.title[currentLanguage]}
-                  </Link>
-                ))}
+                {locations.map((location) =>
+                  location.id === "1" ? (
+                    <Link
+                      key={location.id}
+                      to={`/location/${location.id}`}
+                      className="dropdown-item"
+                      onClick={() => {
+                        setIsLocationsOpen(false);
+                        setIsMobileMenuOpen(false);
+                      }}
+                    >
+                      {location.title[currentLanguage]}
+                    </Link>
+                  ) : (
+                    <div key={location.id} className="dropdown-item disabled">
+                      {location.title[currentLanguage]}
+                      <span className="coming-soon-text">
+                        {t("comingSoon")}
+                      </span>
+                    </div>
+                  )
+                )}
               </div>
             )}
           </div>

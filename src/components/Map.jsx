@@ -36,21 +36,23 @@ export default function Map() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {locations.map((loc) => (
-          <Marker
-            key={loc.id}
-            position={[loc.coordinates.lat, loc.coordinates.lng]}
-            icon={markerIcon}
-          >
-            <Popup>
-              <strong>{loc.title[currentLanguage]}</strong>
-              <br />
-              <em>{loc.address[currentLanguage]}</em>
-              <br />
-              {loc.description[currentLanguage]}
-            </Popup>
-          </Marker>
-        ))}
+        {locations
+          .filter((loc) => loc.id !== "3")
+          .map((loc) => (
+            <Marker
+              key={loc.id}
+              position={[loc.coordinates.lat, loc.coordinates.lng]}
+              icon={markerIcon}
+            >
+              <Popup>
+                <strong>{loc.title[currentLanguage]}</strong>
+                <br />
+                <em>{loc.address[currentLanguage]}</em>
+                <br />
+                {loc.description[currentLanguage]}
+              </Popup>
+            </Marker>
+          ))}
       </MapContainer>
     </div>
   );

@@ -150,6 +150,19 @@
   color: white;
 }
 
+.dropdown-item.disabled {
+  cursor: default;
+  opacity: 0.7;
+  position: relative;
+}
+
+.coming-soon-text {
+  font-size: 0.8em;
+  color: #666;
+  display: block;
+  margin-top: 4px;
+}
+
 /* Language Selector */
 .desktop-language-selector {
   display: flex;
