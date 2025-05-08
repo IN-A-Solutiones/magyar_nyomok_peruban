@@ -175,7 +175,7 @@ const ImageDetail = () => {
             </motion.p>
             <motion.div className="social-icons">
               <motion.a
-                href="https://www.facebook.com/profile.php?id=100064857774925"
+                href="https://www.facebook.com/HungriaenLima"
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={socialIconVariants}
