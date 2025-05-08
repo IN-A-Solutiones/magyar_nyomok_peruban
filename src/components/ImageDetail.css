@@ -113,11 +113,37 @@
   transform: rotate(180deg);
 }
 
+.image-info h2,
+.image-info h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.image-info h2::before,
+.image-info h3::before {
+  content: '';
+  width: clamp(100px, 20vw, 300px);
+  height: clamp(20px, 4vw, 60px);
+  background-image: url('/images/decor_line.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .image-info h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
-  margin-bottom: 1.5rem;
   color: var(--primary-color);
   line-height: 1.3;
+}
+
+.image-info h3 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--primary-color);
+  text-align: center;
 }
 
 .image-info p {
@@ -137,13 +163,6 @@
   margin-bottom: 1.5rem;
   text-align: justify;
   font-size: clamp(0.9rem, 2vw, 1.1rem);
-}
-
-.image-description h3 {
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
-  color: var(--primary-color);
-  margin: 2rem 0 1rem;
-  text-align: center;
 }
 
 .image-description h4 {
@@ -239,6 +258,12 @@
     bottom: 0;
     right: 0;
   }
+
+  .image-info h2::before,
+  .image-info h3::before {
+    width: clamp(80px, 15vw, 200px);
+    height: clamp(15px, 3vw, 40px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -273,6 +298,12 @@
   .image-info .corner-bottom-right {
     width: clamp(40px, 8vw, 100px);
     height: clamp(40px, 8vw, 100px);
+  }
+
+  .image-info h2::before,
+  .image-info h3::before {
+    width: clamp(60px, 12vw, 150px);
+    height: clamp(12px, 2.5vw, 30px);
   }
 }
 
@@ -313,6 +344,12 @@
   .image-info .corner-bottom-right {
     width: clamp(30px, 6vw, 80px);
     height: clamp(30px, 6vw, 80px);
+  }
+
+  .image-info h2::before,
+  .image-info h3::before {
+    width: clamp(40px, 10vw, 100px);
+    height: clamp(10px, 2vw, 20px);
   }
 }
 
