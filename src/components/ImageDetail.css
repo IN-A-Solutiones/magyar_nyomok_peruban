@@ -8,6 +8,34 @@
   justify-content: flex-start;
   margin: 0 auto;
   background-color: rgb(240, 223, 145);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-detail::before,
+.image-detail::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url('/images/birds.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.image-detail::before {
+  top: 200px;
+  left: 50px;
+  transform: rotate(-15deg);
+}
+
+.image-detail::after {
+  top: 200px;
+  right: 50px;
+  transform: rotate(15deg) scaleX(-1);
 }
 
 .image-container {
@@ -19,6 +47,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 4rem;
+  position: relative;
+  z-index: 1;
 }
 
 .image-container img {
@@ -40,6 +70,8 @@
   background-color: #f0f8ff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
 }
 
 .image-info h2 {

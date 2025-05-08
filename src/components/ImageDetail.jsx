@@ -219,8 +219,6 @@ const ImageDetail = () => {
         <motion.img
           src={`/images/image${id}.webp`}
           alt={imageDetails[id].title}
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.2 }}
         />
       </motion.div>
       <motion.div
