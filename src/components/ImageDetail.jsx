@@ -227,6 +227,10 @@ const ImageDetail = () => {
         initial="hidden"
         animate="visible"
       >
+        <div className="corner-top-left"></div>
+        <div className="corner-top-right"></div>
+        <div className="corner-bottom-left"></div>
+        <div className="corner-bottom-right"></div>
         <motion.h2 variants={itemVariants}>{imageDetails[id].title}</motion.h2>
         {typeof imageDetails[id].description === "string" ? (
           <motion.p variants={itemVariants}>

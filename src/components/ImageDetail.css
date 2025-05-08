@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +73,44 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 1;
+}
+
+.image-info .corner-top-left,
+.image-info .corner-top-right,
+.image-info .corner-bottom-left,
+.image-info .corner-bottom-right {
+  content: '';
+  position: absolute;
+  width: clamp(80px, 12vw, 200px);
+  height: clamp(80px, 12vw, 200px);
+  background-image: url('/images/corner_decor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.image-info .corner-top-left {
+  top: clamp(-30px, -3vw, -20px);
+  left: clamp(-30px, -3vw, -20px);
+  transform: rotate(0deg);
+}
+
+.image-info .corner-top-right {
+  top: clamp(-30px, -3vw, -20px);
+  right: clamp(-30px, -3vw, -20px);
+  transform: rotate(90deg);
+}
+
+.image-info .corner-bottom-left {
+  bottom: clamp(-30px, -3vw, -20px);
+  left: clamp(-30px, -3vw, -20px);
+  transform: rotate(-90deg);
+}
+
+.image-info .corner-bottom-right {
+  bottom: clamp(-30px, -3vw, -20px);
+  right: clamp(-30px, -3vw, -20px);
+  transform: rotate(180deg);
 }
 
 .image-info h2 {
@@ -168,6 +207,38 @@
   .image-info {
     padding: 0 1.5rem;
   }
+
+  .image-info {
+    padding: 3rem 2rem;
+  }
+
+  .image-info .corner-top-left,
+  .image-info .corner-top-right,
+  .image-info .corner-bottom-left,
+  .image-info .corner-bottom-right {
+    width: clamp(60px, 10vw, 150px);
+    height: clamp(60px, 10vw, 150px);
+  }
+
+  .image-info .corner-top-left {
+    top: 0;
+    left: 0;
+  }
+
+  .image-info .corner-top-right {
+    top: 0;
+    right: 0;
+  }
+
+  .image-info .corner-bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+
+  .image-info .corner-bottom-right {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -185,7 +256,7 @@
   }
 
   .image-info {
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem;
   }
 
   .social-icons {
@@ -194,6 +265,14 @@
 
   .social-icons a {
     font-size: 2.2rem;
+  }
+
+  .image-info .corner-top-left,
+  .image-info .corner-top-right,
+  .image-info .corner-bottom-left,
+  .image-info .corner-bottom-right {
+    width: clamp(40px, 8vw, 100px);
+    height: clamp(40px, 8vw, 100px);
   }
 }
 
@@ -213,7 +292,7 @@
   }
 
   .image-info {
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
   .image-description p {
@@ -226,6 +305,14 @@
 
   .social-icons a {
     font-size: 2rem;
+  }
+
+  .image-info .corner-top-left,
+  .image-info .corner-top-right,
+  .image-info .corner-bottom-left,
+  .image-info .corner-bottom-right {
+    width: clamp(30px, 6vw, 80px);
+    height: clamp(30px, 6vw, 80px);
   }
 }
 
