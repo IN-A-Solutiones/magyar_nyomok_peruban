@@ -13,18 +13,74 @@
     "title": "Lugares húngaros"
   },
   "about": {
-    "description": "Esta página presenta las relaciones culturales húngaro-peruanas y húngaro-bolivianas. Los lugares que se muestran en las imágenes y en el mapa tienen una conexión húngara, ya sea en forma de obras de arte, monumentos arquitectónicos o eventos históricos. El proyecto fue iniciado por la Embajada de Hungría en Lima para mostrar los lazos culturales e históricos entre los dos países."
+    "title": "Acerca de",
+    "description": "Descripción del proyecto"
   },
   "imageDetails": {
-    "title": "Detalles de la imagen",
-    "description": "Descripción",
-    "back": "Volver al inicio"
+    "title": "BIENVENIDOS AL ENCUENTRO DE DOS MUNDOS",
+    "description": {
+      "intro": "En el corazón de Aguas Calientes, a las puertas de una de las maravillas del mundo, se encuentra un mural que celebra la hermandad entre dos naciones: Hungría y Perú. Aunque una gran distancia geográfica separa a estos dos países, el espíritu y la historia los unen.",
+      "project": "El proyecto nació en 2023, con motivo del 200 aniversario de la escritura del himno nacional húngaro, con la idea de crear un diálogo visual entre la cultura húngara y andina a través del arte. Lo que comenzó como una iniciativa diplomática se ha convertido en un símbolo permanente de amistad internacional y un nuevo punto de referencia cultural para los viajeros que se dirigen a Machu Picchu.",
+      "mural": "El mural fusiona las dos identidades nacionales en una figura femenina en oración, cuyo vestido combina bordados florales húngaros y telas andinas coloridas. Sus brazos extendidos reciben a los viajeros de ambas naciones, invitándolos a reconocerse en este espacio común sin fronteras.",
+      "anthem": "Sobre el mural, una línea emblemática de cada himno peruano y húngaro simboliza el puente entre los dos pueblos: 'Seámoslo siempre' (Seamos siempre así - la línea anterior del himno peruano: 'Somos libres') y 'Con alegría y abundancia'.",
+      "discover": "¡Descubre qué elementos unen a estas dos naciones con antiguas tradiciones!"
+    },
+    "symbolism": {
+      "title": "SIMBOLISMO EN CADA TRAZO",
+      "figure": {
+        "title": "Figura femenina en oración",
+        "description": "En el centro del mural se encuentra una figura femenina con los brazos extendidos y la mirada hacia el cielo, en una postura que puede representar tanto la oración como la recepción de una bendición celestial. Esta figura simboliza la unidad de los dos pueblos a través de una humanidad común. Su postura tiene raíces tanto en la iconografía católica, importante en ambas culturas, como en las antiguas representaciones andinas que simbolizan la conexión con las fuerzas de la naturaleza. Los rasgos faciales, que podrían ser tanto de una mujer andina como de una centroeuropea, simbolizan la universalidad de la experiencia humana más allá de las diferencias étnicas. La expresión serena pero decidida del rostro también evoca el espíritu de libertad e independencia - característico de ambas naciones que han luchado por preservar su identidad cultural a pesar de numerosas amenazas a lo largo de su historia."
+      },
+      "dress": {
+        "title": "El vestido compartido: puente entre tradiciones",
+        "intro": "Quizás el elemento más llamativo del mural es el vestido de la figura femenina, que se divide simétricamente en dos estilos.",
+        "peruvian": "El lado peruano, la mitad izquierda del vestido, está decorado con los vibrantes colores y patrones geométricos característicos de los tejidos tradicionales andinos. Dominan los colores rojo, amarillo y azul, que no solo decoran prendas de vestir, sino que son narrativas visuales que cuentan historias y preservan la memoria cultural de los pueblos indígenas de Perú. Esta mitad de la falda, con su explosión de colores, simboliza la diversidad geográfica y cultural de Perú, desde la costa hasta las montañas y las selvas.",
+        "hungarian": "En el lado húngaro, a la derecha, se ve el estilo del traje popular húngaro: una blusa blanca característica con predominio de motivos florales, principalmente en rojo. Los bordados florales matyó son parte del patrimonio cultural inmaterial de la UNESCO y representan la rica tradición artesanal húngara."
+      },
+      "birds": {
+        "title": "Los pájaros: mensajeros de la libertad",
+        "intro": "Dos pájaros en vuelo rodean la figura central, siendo símbolos poderosos en ambas culturas:",
+        "condor": "A la izquierda (Perú), el cóndor andino, majestuoso y solemne, no solo representa la fauna emblemática de los Andes, sino que también simboliza en la cosmovisión andina la conexión entre el mundo terrenal y el cosmos. Como el ave que vuela más alto, el cóndor simboliza la libertad, la excelente visión y la capacidad de elevarse por encima de las dificultades. En la tradición inca, se consideraba mensajero de los dioses y conectaba los tres mundos: Hanan Pacha (mundo superior), Kay Pacha (mundo terrenal) y Uku Pacha (mundo inferior).",
+        "turul": "A la derecha (Hungría) se ve el turul mitológico, un ave ancestral según las tradiciones húngaras que, según las leyendas, guió a los húngaros a la cuenca de los Cárpatos. Este rapaz, identificado con el halcón peregrino, es un símbolo nacional húngaro que aparece en numerosos monumentos y escudos.",
+        "conclusion": "Ambos pájaros vuelan hacia la figura femenina, simbolizando que las tradiciones de los dos países se unen en este punto de encuentro cultural. Su vuelo también evoca la libertad, un valor fundamental que aparece en ambos himnos nacionales."
+      },
+      "inscription": {
+        "title": "La inscripción arqueada: mensaje al cielo",
+        "description": "Sobre el mural, en una inscripción arqueada, podemos leer una línea de cada himno nacional: 'Seámoslo siempre' y 'Con alegría y abundancia'. Esta frase combina la segunda línea del himno peruano y la segunda línea del himno húngaro. El arco que forma el cielo simboliza que estas ideas trascienden fronteras y se consideran aspiraciones universales. La inscripción invita al espectador no solo a levantar la mirada, sino también el espíritu - recordándonos que la libertad y el bienestar son deseos que unen a la humanidad independientemente de las distancias geográficas."
+      }
+    },
+    "anthems": {
+      "title": "CUANDO DOS HIMNOS ENTRABLAN DIÁLOGO",
+      "intro": "Pocos elementos representan tan fielmente el espíritu de una nación como su himno. Estas composiciones, nacidas en momentos históricos cruciales, condensan valores, aspiraciones y espiritualidad que definen la identidad de un pueblo. En el caso de Hungría y Perú, los himnos nacionales - aunque nacidos en circunstancias muy diferentes - muestran sorprendentes similitudes temáticas a las que este mural rinde homenaje.",
+      "peruvian": {
+        "title": "Himno nacional de Perú: canción de libertad",
+        "description": "El himno nacional de Perú nació en 1821, en el amanecer de la independencia peruana. Compuesto con música de José Bernardo Alcedo y letra de José de la Torre Ugarte y Alarcón, el himno se interpretó oficialmente por primera vez el 24 de septiembre de 1821 en el Teatro Nacional de Lima. La línea destacada en el mural, 'Seámoslo siempre', proviene del primer verso del estribillo y forma el núcleo ideológico de la obra: el compromiso inquebrantable de preservar la libertad recién conquistada."
+      },
+      "hungarian": {
+        "title": "El himno húngaro: oración por la felicidad",
+        "description": "El himno nacional húngaro originalmente era un poema titulado 'Himnusz', escrito por Ferenc Kölcsey en 1823 y musicalizado por Ferenc Erkel en 1844. A diferencia de los himnos europeos contemporáneos, que tendían a glorificar el poder militar o la monarquía, el himno húngaro toma la forma de una oración colectiva pidiendo la bendición de Dios para el pueblo húngaro después de siglos de sufrimiento. La expresión 'Con alegría y abundancia' aparece en la primera estrofa como una petición dirigida a Dios para que bendiga a los húngaros con vida abundante y felicidad."
+      },
+      "parallels": {
+        "title": "Paralelismos históricos y temáticos",
+        "description": "Aunque escritos en diferentes continentes, ambos himnos surgieron durante un período de intensos cambios políticos y sociales en todo el mundo. El húngaro en medio del fortalecimiento de los sentimientos nacionalistas previos a la revolución, mientras que el peruano surgió en el contexto de la independencia política del continente americano.",
+        "conclusion": "Ambas composiciones reflejan la rica y difícil historia milenaria de sus pueblos y buscan definir su identidad nacional. Mientras el himno húngaro pide la bendición divina para una nación que aún lucha por su independencia, el peruano enfatiza la recién ganada libertad política. En ambos se refleja un profundo amor por la patria y la aspiración por un mejor futuro para sus pueblos.",
+        "final": "El diálogo visual entre los himnos en el mural nos recuerda que, a pesar de las diferencias geográficas y culturales, las aspiraciones humanas fundamentales nos unen como una sola humanidad."
+      }
+    },
+    "social": "¡Síguenos en Facebook e Instagram!"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contacto"
   },
   "footer": {
     "embassy": "Embajada de Hungría en Lima",
     "address": "Avenida Jorge Basadre 1580, San Isidro, Lima",
     "phone": "Teléfono: +51-1-620-9520; +51-1-620-9521",
-    "rights": "Todos los derechos reservados a la Embajada de Hungría en Lima",
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
     "followUs": "Síguenos",
     "design": "Diseño y desarrollo"
   }

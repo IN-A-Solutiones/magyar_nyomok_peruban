@@ -1,5 +1,5 @@
 {
-  "title": "Ungriyapa Peruwan Boliviawan ñawpaq llaqtankuna",
+  "title": "Magyarpa markan\nPeruwan Boliviaywan",
   "selectImage": "Llaqtakunamanta akllay",
   "home": "Qallariy",
   "comingSoon": "Qhipa p'unchawpi...",
@@ -13,18 +13,73 @@
     "title": "Ungriyapa llaqtankuna"
   },
   "about": {
-    "description": "Kay web p'anqa Ungriyapa-Peruwan Ungriyapa-Boliviawan kawsay tinkuyninkunamanta willan. Llimphikunapi, mapapipas rikuchisqa llaqtakuna, tukuy Ungriyapa tinkuyniyuqmi, llimphi ruwaykunamanta, wasi ruwaykunamanta, ñawpaq pacha pachakunamanta. Kay ruwayqa Ungriyapa Lima llaqtapi kamachikuq wasimanta qallarirqan, iskay llaqtakunapa kawsay tinkuyninkunata, ñawpaq pacha tinkuyninkunata rikuchinapaq."
+    "title": "Manta",
+    "description": "Proyecto descripcion"
   },
   "imageDetails": {
-    "title": "Llimphipa sut'inchan",
-    "description": "Sut'inchan",
-    "back": "Qallariyman kutiy"
+    "title": "ISKAY PACHAPA TARINANCHIKMAN ALLILLANCHIK",
+    "description": {
+      "intro": "Aguas Calientespa sunqunpi, pachamama llaqtakunamanta hukninpa punkuyninpi, iskay llaqtakunapa, Magyarpa Peruwan, masinchayninmanta mural rikuchkan. Kay iskay llaqtakunaqa karu karu kachkanpas, yuyayninwan ñawpa pachanpas hukllachkan.",
+      "project": "Kay proyecto 2023 watapi paqarirqan, magyar llaqtapa takinpa qillqasqan 200 watanpaq, magyarwan andino culturakunapa rikch'ayninpi rimanakuyta ruwananpaq. Diplomatiko kamachiy kamachiy hinamanta qallarisqa, kunanqa pachamama llaqtakunapa masinchayninpa unanchan hinam, Machu Picchuman puriqkunapa musuq yachay tiyan hinam.",
+      "mural": "Kay muralqa iskay llaqtakunapa rikch'ayninmanta huk warmi suyayninpi hukllachkan, p'achanqa magyar t'ikakunawan andino p'achakunawan hukllasqa. Sayaynin maqinkunaqa iskay llaqtakunapa puriqkunata chaskin, kay huklla pachapi kikinkunata rikunankupaq.",
+      "anthem": "Muralpa hananpi, peruwan magyar llaqtakunapa takinmanta huk huk rimayqa iskay llaqtakunapa chakanta rikuchin: 'Seámoslo siempre' (Ñoqanchikpas kachun - peru llaqtapa takinpa ñawpaq rimaynin: 'Qispisqa kachkanchik') wan 'Jó kedvvel, bőséggel'.",
+      "discover": "¡Rikuy ima elementokunam iskay ñawpa pachamanta llaqtakunata hukllachkan!"
+    },
+    "symbolism": {
+      "title": "UNANCHA KAYKUNAPI",
+      "figure": {
+        "title": "Suyay warmi",
+        "description": "Muralpa chawpinpi huk warmi rikuchkan, maqinkuna sayayninpi, qhawariynin hanan pachaman, suyay hinapas, hanan pachamanta bendicion chaskiy hinapas. Kay warmiqa iskay llaqtakunapa hukllayninmanta rikuchin, huk runa hinam. Sayayninqa iskay culturakunapi importante catolico iconografiawan andino ñawpa pachamanta rikuchiykunawan hukllasqa, pachamama kallpankunawan tinkunakuyta rikuchin. Uyankunaqa andino warmipas, centro europeo warmipas hinam, runa kawsaypa hukllayninmanta rikuchin, etnico diferenciakunamanta aswan. Uyankunaqa samisqa ichaqa sinchi rikuchin, qispisqa hinata, independencia hinata - iskay llaqtakunapa, achka awqanakuykunamanta kikinkunapa cultura identidadninmanta amachanankupaq."
+      },
+      "dress": {
+        "title": "Huklla p'acha: ñawpa pachakunapa chakan",
+        "intro": "Muralpa aswan rikch'ayninmanta elementonqa warmipa p'achan, iskay estilo hinam rakisqa.",
+        "peruvian": "Peru ladon, p'achapa ch'iqtin, andino p'achakunapa k'achasqa llimphikunawan geometrico patrónkuna rikuchkan. Puka, q'ellu, anqas llimphikuna dominan, p'achakunallataqmi mana, aswanpas visual narrativa hinam, willakun, peru llaqtakunapa cultura yuyayninmanta amachan. Kay p'acha mitadnin, llimphikuna explotacionninwan, peru llaqtapa geografico wan cultura diversidadninmanta rikuchin, chala pachamanta punku pachakama, sach'a sach'a pachakama."
+      },
+      "birds": {
+        "title": "Pisqukuna: qispisqapa willaynin",
+        "intro": "Iskay pisqu puriqnin warmi chawpinmanta muyun, iskay culturakunapi sinchi unancha hinam:",
+        "condor": "Ch'iqtin (Peru), andino kondor, hatun hatun hinam, andino fauna emblematica hinam mana, aswanpas andino cosmovisionpi pachamama pachawan cosmos tinkunakuyta rikuchin. Sapaq puriq pisqu hinam, kondorqa qispisqata, allin rikuyta, sasachakuykunamanta sayariy atiyninta rikuchin. Inka tradicionpi, dioskunapa willaynin hinam, iskay pachakunata hukllachkan: Hanan Pacha (hanan pacha), Kay Pacha (kay pacha) wan Uku Pacha (uku pacha).",
+        "turul": "Paña ladon (Magyar) turul mitologico rikuchkan, magyar tradicionkunamanta ñawpa pisqu, leyendakunamanta, magyar runakunata Carpatos cuencaman pusarqan. Kay rapaz, halcon peregrino hinam, magyar llaqtapa unanchan hinam, achka monumentokunapiwan escudokunapi rikuchkan.",
+        "conclusion": "Iskay pisqukunaqa warmiman purin, iskay llaqtakunapa tradicionkuna kay cultura tinkunakuy pachapi hukllachkan. Puriyninkunaqa qispisqata rikuchin, iskay llaqtakunapa takinpi fundamental valor hinam."
+      },
+      "inscription": {
+        "title": "Arqueado qillqa: hanan pachaman willay",
+        "description": "Muralpa hananpi, arqueado qillqapi, iskay llaqtakunapa takinmanta huk huk rimayta liyiyta atin: 'Seámoslo siempre' wan 'Jó kedvvel, bőséggel'. Kay rimayqa peru llaqtapa takinpa iskaynin rimayninwan magyar llaqtapa takinpa iskaynin rimayninmanta hukllasqa. Hanan pachata formaq arcoqa kay yuyaykuna fronterakunamanta aswan, pachamama runakunapa munaynin hinam. Qillqaqa rikukuqta mana qhawariyninllataq sayachinchu, aswanpas yuyayninpas - qispisqawan allin kawsayqa runakunata hukllachkan, geografico karu karu kachkanpas."
+      }
+    },
+    "anthems": {
+      "title": "ISKAY TAKIKUNA RIMANAKUNAN",
+      "intro": "Pisi elementokuna llaqtapa yuyayninmanta fiel hinam rikuchin, takin hinam. Kay composicionkuna, ñawpa pachamanta crucial momentokunapi paqarisqa, valor, munay, espiritualidad condensan, llaqtapa identidadninmanta definin. Magyarpa Peruwan, llaqtakunapa takinkuna - wak hinam paqarisqa pas - sorprendente tematico similaridadkuna rikuchin, kay mural homenaje hinam.",
+      "peruvian": {
+        "title": "Peru llaqtapa takin: qispisqapa takin",
+        "description": "Peru llaqtapa takin 1821 watapi paqarirqan, peru independencia paqariyninpi. José Bernardo Alcedo takinwan José de la Torre Ugarte y Alarcón qillqasqan, takinqa oficial hinam 1821 watapi 24 de septiembre p'unchawpi Lima Teatro Nacionalpi takirqan. Muralpi destacado rimay, 'Seámoslo siempre', estribillo primer versomanta hamun, obra ideologico nucleo hinam: qispisqa kamachiy kamachiy amachanapa sinchi compromiso."
+      },
+      "hungarian": {
+        "title": "Magyar takin: kusisqa kawsaypa suyaynin",
+        "description": "Magyar llaqtapa takin originalmente 'Himnusz' sutiyoq poema karqan, Ferenc Kölcsey 1823 watapi qillqasqan, Ferenc Erkel 1844 watapi takin hinam ruwasqan. Contemporaneo europeo takinkunamanta diferente hinam, chaykunaqa militar poder o monarquia glorifican, magyar takinqa colectivo suyay hinam, dios bendicionta mañan, magyar runakunapa, wata wata muchuykunamanta qhipa. 'Jó kedvvel, bőséggel' rimayqa primer estrofapi diosman mañakuy hinam, magyar runakunata kusisqa kawsaywan bendicionanankupaq."
+      },
+      "parallels": {
+        "title": "Historicowan tematico paralelismo",
+        "description": "Wak continentespi qillqasqa pas, iskay takinkunaqa pachamama llaqtakunapi intenso politico wan social cambio periodo pi paqarirqan. Magyarqa revolucion ñawpaq nacionalista sentimiento fortalecimiento pi, peruqa americano continente politico independencia contexto pi paqarirqan.",
+        "conclusion": "Iskay composicionkunaqa llaqtakunapa kusisqa wan sasachasqa wata wata historia reflectan, llaqtakunapa identidadninmanta defininankupaq. Magyar takinqa dios bendicionta mañan, independencia llaqta llaqta, peru takinqa musuq qispisqa kamachiy kamachiy enfatizan. Iskaykunapiqa hatun llaqta munay, runakunapa allin qhipa pachapa munaynin reflectan.",
+        "final": "Muralpi takinkunapa visual rimanakuyqa yuyarichin, geografico wan cultura diferenciakunamanta aswanpas, fundamental runa munaykuna huk runa hinam hukllachkanchik."
+      }
+    },
+    "social": "¡Facebookwan Instagrampi qatisunchik!"
+  },
+  "navigation": {
+    "home": "Qallariy",
+    "about": "Manta",
+    "contact": "Tinkunakuy"
   },
   "footer": {
     "embassy": "Ungriyapa Lima llaqtapi kamachikuq wasi",
     "address": "Avenida Jorge Basadre 1580, San Isidro, Lima",
     "phone": "Telefono: +51-1-620-9520; +51-1-620-9521",
-    "rights": "Tukuy hayñikuna Ungriyapa Lima llaqtapi kamachikuq wasipaqmi",
+    "rights": "Llapa derechokuna amachasqa",
+    "privacy": "Privacidad politica",
+    "terms": "Usokuna termino",
     "followUs": "Qatiway",
     "design": "Diseño y desarrollo"
   }

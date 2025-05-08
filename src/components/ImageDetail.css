@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: flex-start;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
 .image-container {
@@ -35,13 +36,16 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .image-info h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--text-color);
-  line-height: 1.2;
+  color: var(--primary-color);
 }
 
 .image-info p {
@@ -50,6 +54,35 @@
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.image-description {
+  line-height: 1.6;
+}
+
+.image-description p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.image-description h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin: 2rem 0 1rem;
+  text-align: center;
+}
+
+.image-description h4 {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin: 1.5rem 0 1rem;
+}
+
+.social-links {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+  color: var(--primary-color);
 }
 
 /* Responsive adjustments */
@@ -72,6 +105,22 @@
   .image-container,
   .image-info {
     padding: 0 1rem;
+  }
+
+  .image-info {
+    padding: 1.5rem;
+  }
+
+  .image-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .image-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .image-description h4 {
+    font-size: 1.2rem;
   }
 }
 

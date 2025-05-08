@@ -16,9 +16,57 @@
     "description": "Ez a weboldal a magyar–perui és a magyar–bolíviai kulturális kapcsolatokat mutatja be. A képeken és a térképen látható helyszínek mindegyike magyar kapcsolattal rendelkezik, legyen az műalkotás, építészeti emlék vagy történelmi esemény. A projektet Magyarország Limai Nagykövetsége gondozza, s ezen keresztül mutatja be az országok közötti kulturális és történelmi kapcsolatokat."
   },
   "imageDetails": {
-    "title": "Kép részletei",
-    "description": "Leírás",
-    "back": "Vissza a főoldalra"
+    "title": "ÜDVÖZLÜK KÉT VILÁG TALÁLKOZÁSÁNÁL",
+    "description": {
+      "intro": "Aguas Calientes szívében, a világ egyik csodájának kapujában áll az a falfestmény, amely két nemzet, Magyarország és Peru testvériségét ünnepli. Bár nagy földrajzi távolság választja el egymástól a két országot, a szellemiség és a történelem összeköti őket.",
+      "project": "A projekt 2023-ban született, a magyar nemzeti himnusz megírásának 200. évfordulójára azzal az elképzeléssel, hogy a művészeten keresztül vizuális párbeszédet teremt a magyar és az andoki kultúra között. Ami diplomáciai kezdeményezésként indult, az mára a nemzetközi barátság állandó szimbólumává és új kulturális referenciaponttá vált a Machu Picchu felé tartó utazók számára.",
+      "mural": "A falfestmény egybeolvasztja a két nemzeti identitást egy imádkozó női alakon, akinek ruhája magyar virághímzések és színes andoki szövetek keverékéből áll. Kinyújtott kezei mindkét nemzet utazóit fogadják, s arra invitálják őket: ismerjék fel magukat ebben a határtalan közös térben.",
+      "anthem": "A festmény fölött a perui és a magyar himnusz egy-egy emblematikus sora a két nép közötti hidat szimbolizálja: Seámoslo siempre (Legyünk mindig azok – a perui himnusz ezt megelőző sora: Szabadok vagyunk) és a Jó kedvvel, bőséggel.",
+      "discover": "Fedezd fel, milyen elemek kötik össze a két ősi hagyományokkal rendelkező nemzetet!"
+    },
+    "symbolism": {
+      "title": "SZIMBOLIKA MINDEN VONÁS MÖGÖTT",
+      "figure": {
+        "title": "Imádkozó női alak",
+        "description": "A falfestmény közepén egy női alak látható, karjai nyújtva, tekintete az ég felé, olyan testtartásban, amely egyszerre jelképezheti az imát és a mennyei áldás fogadását. Ez a figura a két nép egységét jelképezi az egyetlen közös emberiség révén. Testtartása egyaránt gyökerezik a mindkét kultúrában fontos katolikus ikonográfiában és az andoki ősi ábrázolásokban, amelyek a természet erőivel való kapcsolatot jelképezik. Az arcvonások, amelyek akár egy andoki, akár egy közép-európai nőjé is lehetnek, az etnikai különbségeken túli emberi tapasztalat egyetemességét szimbolizálják. Az arc nyugodt, de határozott kifejezése a szabadság és a függetlenség szellemét is idézi – ez mindkét nemzetre jellemző, amelyek történelmük során számos fenyegetés ellenére küzdöttek kulturális identitásuk megőrzéséért."
+      },
+      "dress": {
+        "title": "A megosztott ruha: híd a hagyományok között",
+        "intro": "A falfestmény talán legszembetűnőbb eleme a női alak ruhája, amely szimmetrikusan két stílusra oszlik.",
+        "peruvian": "A perui oldalon, a ruha bal fele az andoki hagyományos szövetekre jellemző élénk színekkel és geometrikus mintákkal díszített. A vörös, sárga és kék színek dominálnak, s nem csupán ruhadarabokat díszítenek, hanem vizuális narratívák, amelyek történeteket mesélnek és őrzik Peru őslakos népeinek kulturális emlékezetét. A szoknya ezen fele színekkel robbanó pompájával Peru földrajzi és kulturális sokszínűségét jelképezi, a partvidéktől a hegyvidéken át az esőerdőkig.",
+        "hungarian": "A magyar oldalon, jobbra a magyar népviselet stílusa látható: jellegzetes fehér blúz, amelyen virágmotívumok dominálnak, főleg piros színben. A matyó virághímzések az UNESCO szellemi kulturális örökségének részét képezik, és a gazdag magyar kézműves hagyományokat képviselik."
+      },
+      "birds": {
+        "title": "A madarak: a szabadság hírnökei",
+        "intro": "A központi alakot két repülő madár veszi körül, amelyek mindkét kultúrában erőteljes szimbólumok:",
+        "condor": "A bal oldalon (Peru) az andoki kondor fenséges és ünnepélyes, nemcsak az Andok emblematikus állatvilágát képviseli, hanem az andoki világképben a földi világ és a kozmosz közötti kapcsolatot is. Mint a legmagasabbra repülő madár, a kondor a szabadságot, a kiváló látást és a nehézségek fölé emelkedés képességét szimbolizálja. Az inkák hagyományában az istenek hírnökének tartották, és összekötötte a három világot: a Hanan Pachát (felső világ), a Kay Pachát (földi világ) és az Uku Pachát (alsó világ).",
+        "turul": "A jobb oldalon (Magyarország) a mitológiai turul látható, a magyar hagyományok szerint ősi madár, amely a legendák szerint a magyarokat a Kárpátok medencéjébe vezette. Ez a ragadozó, amelyet a vándorsólyommal azonosítanak, magyar nemzeti szimbólum, számos műemléken és címeren megjelenik.",
+        "conclusion": "Mindkét madár a nőalak felé repül, ezzel szimbolizálják, hogy a két ország hagyományai ebben a kulturális találkozási pontban egyesülnek. Repülésük a mindkét nemzeti himnuszban megjelenő alapvető értéknek tartott szabadságot is idézi."
+      },
+      "inscription": {
+        "title": "A félköríves felirat: üzenet az égnek",
+        "description": "A falfestmény fölött egy félköríves feliratban a két ország himnuszának egy-egy sorát olvashatjuk: Seámoslo siempre és Jó kedvvel, bőséggel. Ez a mondat a perui himnusz második sorát és a magyar himnusz második sorát ötvözi. Az égboltot formázó ív azt jelképezi, hogy ezek az eszmék határokon átívelnek és egyetemes törekvéseknek számítanak. A felirat arra invitálja a nézőt, hogy ne csak a tekintetét emelje fel, hanem a lelkét is – ezzel emlékeztet minket arra, hogy a szabadság és a jólét olyan vágyak, amelyek földrajzi távolságoktól függetlenül egyesítik az emberiséget."
+      }
+    },
+    "anthems": {
+      "title": "AMIKOR KÉT HIMNUSZ PÁRBESZÉDET FOLYTAT",
+      "intro": "Kevés elem képviseli olyan hűen egy nemzet lelkét, mint a himnusza. Ezek a történelmi fordulópontokon született kompozíciók olyan értékeket, törekvéseket és szellemiséget sűrítenek magukba, amelyek egy nép identitását meghatározzák. Magyarország és Peru esetében a nemzeti himnuszok – bár nagyon különböző körülmények között születtek – meglepő tematikus hasonlóságokat mutatnak, amelyeknek ez a falfestmény adózik.",
+      "peruvian": {
+        "title": "Peru nemzeti himnusza: dal a szabadságról",
+        "description": "Peru nemzeti himnusza 1821-ben, a perui függetlenség hajnalán született. A José Bernardo Alcedo zenéjére és José de la Torre Ugarte y Alarcón szövegére komponált himnusz hivatalosan 1821. szeptember 24-én hangzott el először a limai Nemzeti Színházban. A falfestményen kiemelt Seámoslo siempre sor a refrén első versszakából származik és a mű ideológiai magját képezi: a frissen kivívott szabadság megőrzése iránti rendíthetetlen elkötelezettséget."
+      },
+      "hungarian": {
+        "title": "A magyar himnusz: ima a boldogságért",
+        "description": "A magyar nemzeti himnusz eredetileg egy Himnusz című vers volt, amelyet Kölcsey Ferenc írt 1823-ban, majd Erkel Ferenc zenésített meg 1844-ben. A korabeli európai himnuszokkal ellentétben, amelyek inkább a katonai hatalmat vagy a monarchiát dicsőítették, a magyar himnusz kollektív imádság formájában kéri Isten áldását a magyar nép számára a több évszázados szenvedések után. A Jó kedvvel, bőséggel kifejezés az első versszakban Istenhez intézett kérésként jelenik meg, hogy áldja meg a magyarokat bőséges élettel és boldogsággal."
+      },
+      "parallels": {
+        "title": "Történelmi és tematikus párhuzamok",
+        "description": "Bár különböző kontinenseken íródtak, mindkét himnusz egy világszerte intenzív politikai és társadalmi változásokkal teli időszakban jött létre. A magyar a forradalom előtti nacionalista érzelmek erősödése közepette, míg a perui az amerikai kontinens politikai függetlenségének kontextusában jött létre.",
+        "conclusion": "Mindkét kompozíció tükrözi népének gazdag és nehéz évezredes történelmét, és nemzeti identitásának meghatározására törekszik. Míg a magyar himnusz isteni áldást kér egy még mindig függetlenségéért küzdő nemzet számára, a perui az újonnan elnyert politikai szabadságot hangsúlyozza. Mindkettőben a mély hazaszeretet és a népek jobb jövőjéért való törekvés tükröződik.",
+        "final": "A falfestményen vizuálisan megjelenő himnuszok közötti párbeszéd arra emlékeztet, hogy a földrajzi és kulturális különbségek ellenére az alapvető emberi törekvések egyetlen emberiségként egyesítenek bennünket."
+      }
+    },
+    "social": "Kövess minket Facebookon és Instagramon!"
   },
   "footer": {
     "embassy": "Magyarország Nagykövetsége Lima",
