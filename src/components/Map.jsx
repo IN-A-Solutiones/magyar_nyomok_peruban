@@ -37,7 +37,7 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         {locations
-          .filter((loc) => loc.id !== "3")
+          .filter((loc) => loc.id === "1")
           .map((loc) => (
             <Marker
               key={loc.id}
