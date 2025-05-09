@@ -64,6 +64,13 @@
   color: var(--text-secondary);
 }
 
+.select-image-text {
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

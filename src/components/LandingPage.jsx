@@ -16,9 +16,10 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="landing-page">
-      <section className="hero-section">
+    <main className="landing-page">
+      <section className="hero-section" aria-labelledby="main-title">
         <motion.h1
+          id="main-title"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
@@ -26,7 +27,7 @@ const LandingPage = () => {
         >
           {t("title")}
         </motion.h1>
-        <motion.div
+        <motion.article
           className="about-content"
           initial="hidden"
           animate="visible"
@@ -34,8 +35,9 @@ const LandingPage = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
           <p>{t("about.description")}</p>
-        </motion.div>
+        </motion.article>
         <motion.p
+          className="select-image-text"
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
@@ -43,7 +45,7 @@ const LandingPage = () => {
         >
           {t("selectImage")}
         </motion.p>
-        <div className="image-grid">
+        <nav className="image-grid" aria-label="Location selection">
           {locations.map((location, index) => (
             <motion.div
               key={location.id}
@@ -57,11 +59,15 @@ const LandingPage = () => {
               }}
             >
               {location.id === "1" ? (
-                <Link to={`/location/${location.id}`} className="image-card">
+                <Link
+                  to={`/${currentLanguage}/location/${location.id}`}
+                  className="image-card"
+                >
                   <img
                     src={location.image}
                     alt={location.title[currentLanguage]}
                     className={`location-image location-image-${location.id}`}
+                    loading={index === 0 ? "eager" : "lazy"}
                   />
                   <div className="image-title">
                     {location.title[currentLanguage]}
@@ -73,6 +79,7 @@ const LandingPage = () => {
                     src={location.image}
                     alt={location.title[currentLanguage]}
                     className={`location-image location-image-${location.id}`}
+                    loading="lazy"
                   />
                   <div className="image-title">
                     {location.title[currentLanguage]}
@@ -82,21 +89,22 @@ const LandingPage = () => {
               )}
             </motion.div>
           ))}
-        </div>
+        </nav>
       </section>
 
       <motion.section
         id="map"
         className="map-section"
+        aria-labelledby="map-title"
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
       >
-        <h2>{t("nav.map")}</h2>
+        <h2 id="map-title">{t("nav.map")}</h2>
         <Map />
       </motion.section>
-    </div>
+    </main>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { locations } from "../data/locations";
 
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
   const currentLanguage = i18n.language;
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
@@ -23,6 +24,12 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+
+    // Get the current path without the language prefix
+    const currentPath = location.pathname.replace(/^\/[a-z]{2}/, "");
+
+    // Navigate to the new language path
+    navigate(`/${lng}${currentPath || ""}${location.search}${location.hash}`);
   };
 
   useEffect(() => {
@@ -62,12 +69,13 @@ const Navbar = () => {
     }
   };
 
-  const isHomeActive = location.pathname === "/" && !location.hash;
+  const isHomeActive =
+    location.pathname === `/${currentLanguage}` || location.pathname === "/";
 
   return (
     <nav className={`navbar ${isVisible ? "visible" : "hidden"}`}>
       <div className="navbar-content">
-        <Link to="/" className="navbar-logo">
+        <Link to={`/${currentLanguage}`} className="navbar-logo">
           <img src="/images/logo.png" alt="" />
         </Link>
 
@@ -92,7 +100,7 @@ const Navbar = () => {
           ref={mobileMenuRef}
         >
           <Link
-            to="/"
+            to={`/${currentLanguage}`}
             className={`nav-link ${isHomeActive ? "active" : ""}`}
             onClick={() => {
               setIsMobileMenuOpen(false);
@@ -114,7 +122,7 @@ const Navbar = () => {
                   location.id === "1" ? (
                     <Link
                       key={location.id}
-                      to={`/location/${location.id}`}
+                      to={`/${currentLanguage}/location/${location.id}`}
                       className="dropdown-item"
                       onClick={() => {
                         setIsLocationsOpen(false);
@@ -136,7 +144,7 @@ const Navbar = () => {
             )}
           </div>
           <Link
-            to="/#map"
+            to={`/${currentLanguage}#map`}
             onClick={() => scrollToSection("map")}
             className={`nav-link ${location.hash === "#map" ? "active" : ""}`}
           >
