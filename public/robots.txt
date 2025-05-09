@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://magyarnyomokperuban.hu/sitemap.xml
+Sitemap: https://huellashungaras.hu/sitemap.xml
 
 # Disallow admin or private areas if you add them later
 Disallow: /admin/
