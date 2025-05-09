@@ -4,7 +4,7 @@ export const locations = [
     title: {
       hu: "Perui magyar barátság emlékfala, Aguas Calientes, Peru",
       es: "Mural de Amistad Hungría–Perú, Aguas Calientes, Perú",
-      qu: "Piruw-Ungriyapa masikuy mural, Aguas Calientes, Piruw",
+      qu: "Kuyanakuy muralñisqa Hungria–Peru, Aguas Calientes, Peru",
     },
     description: {
       hu: "Magyar utalás egy falfestményen az inkák városánál.",
