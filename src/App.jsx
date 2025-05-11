@@ -11,7 +11,6 @@ import LandingPage from "./components/LandingPage";
 import ImageDetail from "./components/ImageDetail";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ComingSoonWithAnimation from "./components/ComingSoonWithAnimation";
 import i18n from "./i18n/config";
 import "./App.css";
 import { useTranslation } from "react-i18next";
@@ -47,44 +46,42 @@ function App() {
     <I18nextProvider i18n={i18n}>
       <Router>
         <ScrollToTop />
-        <ComingSoonWithAnimation>
-          <div>
-            <Navbar />
-            <Routes>
-              {/* Default route - redirects to current language */}
-              <Route
-                path="/"
-                element={<Navigate to={`/${i18n.language}`} replace />}
-              />
+        <div>
+          <Navbar />
+          <Routes>
+            {/* Default route - redirects to current language */}
+            <Route
+              path="/"
+              element={<Navigate to={`/${i18n.language}`} replace />}
+            />
 
-              {/* Language-specific routes */}
-              <Route
-                path="/:lang"
-                element={
-                  <LanguageRoute>
-                    <LandingPage />
-                  </LanguageRoute>
-                }
-              />
+            {/* Language-specific routes */}
+            <Route
+              path="/:lang"
+              element={
+                <LanguageRoute>
+                  <LandingPage />
+                </LanguageRoute>
+              }
+            />
 
-              <Route
-                path="/:lang/location/:id"
-                element={
-                  <LanguageRoute>
-                    <ImageDetail />
-                  </LanguageRoute>
-                }
-              />
+            <Route
+              path="/:lang/location/:id"
+              element={
+                <LanguageRoute>
+                  <ImageDetail />
+                </LanguageRoute>
+              }
+            />
 
-              {/* Catch all - redirect to current language */}
-              <Route
-                path="*"
-                element={<Navigate to={`/${i18n.language}`} replace />}
-              />
-            </Routes>
-            <Footer />
-          </div>
-        </ComingSoonWithAnimation>
+            {/* Catch all - redirect to current language */}
+            <Route
+              path="*"
+              element={<Navigate to={`/${i18n.language}`} replace />}
+            />
+          </Routes>
+          <Footer />
+        </div>
       </Router>
     </I18nextProvider>
   );

@@ -46,7 +46,7 @@ const LandingPage = () => {
           {t("selectImage")}
         </motion.p>
         <nav className="image-grid" aria-label="Location selection">
-          {locations.map((location, index) => (
+          {locations.slice(0, 1).map((location, index) => (
             <motion.div
               key={location.id}
               initial="hidden"
@@ -58,35 +58,20 @@ const LandingPage = () => {
                 delay: 0.4 + index * 0.1,
               }}
             >
-              {location.id === "1" ? (
-                <Link
-                  to={`/${currentLanguage}/location/${location.id}`}
-                  className="image-card"
-                >
-                  <img
-                    src={location.image}
-                    alt={location.title[currentLanguage]}
-                    className={`location-image location-image-${location.id}`}
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
-                  <div className="image-title">
-                    {location.title[currentLanguage]}
-                  </div>
-                </Link>
-              ) : (
-                <div className="image-card">
-                  <img
-                    src={location.image}
-                    alt={location.title[currentLanguage]}
-                    className={`location-image location-image-${location.id}`}
-                    loading="lazy"
-                  />
-                  <div className="image-title">
-                    {location.title[currentLanguage]}
-                  </div>
-                  <div className="coming-soon-overlay">{t("comingSoon")}</div>
+              <Link
+                to={`/${currentLanguage}/location/${location.id}`}
+                className="image-card"
+              >
+                <img
+                  src={location.image}
+                  alt={location.title[currentLanguage]}
+                  className={`location-image location-image-${location.id}`}
+                  loading="eager"
+                />
+                <div className="image-title">
+                  {location.title[currentLanguage]}
                 </div>
-              )}
+              </Link>
             </motion.div>
           ))}
         </nav>
