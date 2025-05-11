@@ -9,27 +9,6 @@ const ImageDetail = () => {
   const { id } = useParams();
   const { t } = useTranslation();
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: {
@@ -42,159 +21,70 @@ const ImageDetail = () => {
     },
   };
 
-  const socialIconVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.3,
-      },
-    },
-    hover: {
-      scale: 1.2,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-
   const imageDetails = {
     1: {
       title: t("imageDetails.title"),
       description: (
-        <motion.div
-          className="image-description"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.description.intro")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.description.project")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.description.mural")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.description.anthem")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.description.discover")}
-          </motion.p>
+        <div className="image-description">
+          <p>{t("imageDetails.description.intro")}</p>
+          <p>{t("imageDetails.description.project")}</p>
+          <p>{t("imageDetails.description.mural")}</p>
+          <p>{t("imageDetails.description.anthem")}</p>
+          <p>{t("imageDetails.description.discover")}</p>
 
-          <motion.h3 variants={itemVariants}>
-            {t("imageDetails.symbolism.title")}
-          </motion.h3>
+          <h3>{t("imageDetails.symbolism.title")}</h3>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.symbolism.figure.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.figure.description")}
-          </motion.p>
+          <h4>{t("imageDetails.symbolism.figure.title")}</h4>
+          <p>{t("imageDetails.symbolism.figure.description")}</p>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.symbolism.dress.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.dress.intro")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.dress.peruvian")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.dress.hungarian")}
-          </motion.p>
+          <h4>{t("imageDetails.symbolism.dress.title")}</h4>
+          <p>{t("imageDetails.symbolism.dress.intro")}</p>
+          <p>{t("imageDetails.symbolism.dress.peruvian")}</p>
+          <p>{t("imageDetails.symbolism.dress.hungarian")}</p>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.symbolism.birds.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.birds.intro")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.birds.condor")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.birds.turul")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.birds.conclusion")}
-          </motion.p>
+          <h4>{t("imageDetails.symbolism.birds.title")}</h4>
+          <p>{t("imageDetails.symbolism.birds.intro")}</p>
+          <p>{t("imageDetails.symbolism.birds.condor")}</p>
+          <p>{t("imageDetails.symbolism.birds.turul")}</p>
+          <p>{t("imageDetails.symbolism.birds.conclusion")}</p>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.symbolism.inscription.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.symbolism.inscription.description")}
-          </motion.p>
+          <h4>{t("imageDetails.symbolism.inscription.title")}</h4>
+          <p>{t("imageDetails.symbolism.inscription.description")}</p>
 
-          <motion.h3 variants={itemVariants}>
-            {t("imageDetails.anthems.title")}
-          </motion.h3>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.anthems.intro")}
-          </motion.p>
+          <h3>{t("imageDetails.anthems.title")}</h3>
+          <p>{t("imageDetails.anthems.intro")}</p>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.anthems.peruvian.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.anthems.peruvian.description")}
-          </motion.p>
+          <h4>{t("imageDetails.anthems.peruvian.title")}</h4>
+          <p>{t("imageDetails.anthems.peruvian.description")}</p>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.anthems.hungarian.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.anthems.hungarian.description")}
-          </motion.p>
+          <h4>{t("imageDetails.anthems.hungarian.title")}</h4>
+          <p>{t("imageDetails.anthems.hungarian.description")}</p>
 
-          <motion.h4 variants={itemVariants}>
-            {t("imageDetails.anthems.parallels.title")}
-          </motion.h4>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.anthems.parallels.description")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.anthems.parallels.conclusion")}
-          </motion.p>
-          <motion.p variants={itemVariants}>
-            {t("imageDetails.anthems.parallels.final")}
-          </motion.p>
+          <h4>{t("imageDetails.anthems.parallels.title")}</h4>
+          <p>{t("imageDetails.anthems.parallels.description")}</p>
+          <p>{t("imageDetails.anthems.parallels.conclusion")}</p>
+          <p>{t("imageDetails.anthems.parallels.final")}</p>
 
-          <motion.div
-            className="social-icons-container"
-            variants={itemVariants}
-          >
-            <motion.p className="social-links" variants={itemVariants}>
-              {t("imageDetails.social")}
-            </motion.p>
-            <motion.div className="social-icons">
-              <motion.a
+          <div className="social-icons-container">
+            <p className="social-links">{t("imageDetails.social")}</p>
+            <div className="social-icons">
+              <a
                 href="https://www.facebook.com/HungriaenLima"
                 target="_blank"
                 rel="noopener noreferrer"
-                variants={socialIconVariants}
-                whileHover="hover"
               >
                 <FaFacebook />
-              </motion.a>
-              <motion.a
+              </a>
+              <a
                 href="https://www.instagram.com/hungriaenlima/"
                 target="_blank"
                 rel="noopener noreferrer"
-                variants={socialIconVariants}
-                whileHover="hover"
               >
                 <FaInstagram />
-              </motion.a>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+              </a>
+            </div>
+          </div>
+        </div>
       ),
     },
     2: { title: "Image 2", description: "Description for Image 2" },
@@ -203,13 +93,7 @@ const ImageDetail = () => {
   };
 
   return (
-    <motion.div
-      className="image-detail"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className="image-detail">
       <motion.div
         className="image-container"
         variants={imageVariants}
@@ -221,26 +105,19 @@ const ImageDetail = () => {
           alt={imageDetails[id].title}
         />
       </motion.div>
-      <motion.div
-        className="image-info"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
+      <div className="image-info">
         <div className="corner-top-left"></div>
         <div className="corner-top-right"></div>
         <div className="corner-bottom-left"></div>
         <div className="corner-bottom-right"></div>
-        <motion.h2 variants={itemVariants}>{imageDetails[id].title}</motion.h2>
+        <h2>{imageDetails[id].title}</h2>
         {typeof imageDetails[id].description === "string" ? (
-          <motion.p variants={itemVariants}>
-            {imageDetails[id].description}
-          </motion.p>
+          <p>{imageDetails[id].description}</p>
         ) : (
           imageDetails[id].description
         )}
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 
