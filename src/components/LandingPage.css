@@ -32,9 +32,9 @@
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/title_bg.jpeg');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   padding: 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
