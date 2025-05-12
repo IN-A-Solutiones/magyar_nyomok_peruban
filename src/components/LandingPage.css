@@ -52,6 +52,7 @@
   color: var(--text-color);
   text-align: left;
   padding: 1.5rem;
+  white-space: pre-line;
 }
 
 .hero-section p {
