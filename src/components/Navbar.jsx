@@ -17,9 +17,9 @@ const Navbar = () => {
   const hamburgerRef = useRef(null);
 
   const languages = [
-    { code: "hu", label: "HU" },
-    { code: "es", label: "ES" },
-    { code: "qu", label: "QU" },
+    { code: "hu", label: "HU", fullLabel: "Magyar" },
+    { code: "es", label: "ES", fullLabel: "Español" },
+    { code: "qu", label: "QU", fullLabel: "Quechua" },
   ];
 
   const changeLanguage = (lng) => {
@@ -141,23 +141,6 @@ const Navbar = () => {
           >
             {t("nav.map")}
           </Link>
-          <div className="mobile-language-selector">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                className={`language-button ${
-                  i18n.language === lang.code ? "active" : ""
-                }`}
-                onClick={() => {
-                  changeLanguage(lang.code);
-                  setIsMobileMenuOpen(false);
-                  setIsLocationsOpen(false);
-                }}
-              >
-                {lang.label}
-              </button>
-            ))}
-          </div>
         </div>
         <div className="desktop-language-selector">
           {languages.map((lang) => (
@@ -172,6 +155,19 @@ const Navbar = () => {
             </button>
           ))}
         </div>
+      </div>
+      <div className="mobile-language-selector">
+        {languages.map((lang) => (
+          <button
+            key={lang.code}
+            className={`language-button ${
+              i18n.language === lang.code ? "active" : ""
+            }`}
+            onClick={() => changeLanguage(lang.code)}
+          >
+            {lang.fullLabel}
+          </button>
+        ))}
       </div>
     </nav>
   );
