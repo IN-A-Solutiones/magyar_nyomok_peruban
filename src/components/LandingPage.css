@@ -179,11 +179,12 @@
 
 .image-grid::before {
   left: -20px;
+  transform: translateY(-50%) scaleX(-1);
 }
 
 .image-grid::after {
   right: -20px;
-  transform: translateY(-50%) scaleX(-1);
+  transform: translateY(-50%) scaleX(1);
 }
 
 .image-card {
