@@ -34,6 +34,8 @@ const LandingPage = () => {
           variants={fadeInUp}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
+          <div className="corner-top-right"></div>
+          <div className="corner-bottom-left"></div>
           <p>{t("about.description")}</p>
         </motion.article>
         <motion.p
