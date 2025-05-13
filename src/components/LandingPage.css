@@ -22,6 +22,7 @@
   background-size: contain;
   background-repeat: repeat-y;
   z-index: 1;
+  opacity: 0.3;
 }
 
 .landing-page::before {
@@ -85,6 +86,7 @@
   background-repeat: no-repeat;
   z-index: 1;
   display: none;
+  opacity: 0.7;
 }
 
 .about-content::before {
@@ -175,6 +177,7 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;
+  opacity: 0.7;
 }
 
 .image-grid::before {
