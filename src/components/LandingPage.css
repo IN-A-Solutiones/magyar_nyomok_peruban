@@ -8,9 +8,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.landing-page::before,
+.landing-page::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-image: url('/images/oldal1.png');
+  background-size: contain;
+  background-repeat: repeat-y;
+  z-index: 1;
+}
+
+.landing-page::before {
+  left: -15px;
+}
+
+.landing-page::after {
+  right: -15px;
+  transform: scaleX(-1);
 }
 
 .hero-section {
+  position: relative;
+  z-index: 2;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 4rem;
@@ -27,7 +52,7 @@
   color: white;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/title_bg.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/title_bg.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
@@ -66,6 +91,22 @@
   margin-bottom: 3rem;
   color: var(--text-secondary);
   text-align: center;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.select-image-text::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(100px, 20vw, 300px);
+  height: clamp(20px, 4vw, 60px);
+  background-image: url('/images/decor1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image-grid {
@@ -77,6 +118,31 @@
   width: 100%;
   max-width: 1000px;
   justify-content: center;
+  position: relative;
+}
+
+.image-grid::before,
+.image-grid::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: clamp(60px, 10vw, 120px);
+  height: clamp(200px, 30vw, 400px);
+  background-image: url('/images/decor2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.image-grid::before {
+  left: -20px;
+}
+
+.image-grid::after {
+  right: -20px;
+  transform: translateY(-50%) scaleX(-1);
 }
 
 .image-card {
@@ -167,12 +233,29 @@
   background-color: #f0f8ff;
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
+  position: relative;
 }
 
 .map-section h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 2rem;
   color: var(--text-color);
+  position: relative;
+  padding-top: 3rem;
+}
+
+.map-section h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(100px, 20vw, 300px);
+  height: clamp(20px, 4vw, 60px);
+  background-image: url('/images/decor1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .coming-soon-overlay {
@@ -197,14 +280,41 @@
   opacity: 1;
 }
 
+.footer {
+  position: relative;
+  z-index: 3;
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+
+  .image-grid::before,
+  .image-grid::after {
+    display: none;
+  }
+
+  .landing-page::before,
+  .landing-page::after {
+    display: none;
+  }
+
   .landing-page {
-    background-color: rgb(240, 223, 145);
+    background-size: 120% auto;
   }
 }
 
 @media (max-width: 768px) {
+
+  .image-grid::before,
+  .image-grid::after {
+    display: none;
+  }
+
+  .landing-page::before,
+  .landing-page::after {
+    display: none;
+  }
+
   .landing-page {
     padding: calc(2rem + 60px) 1rem;
   }
@@ -215,8 +325,15 @@
 }
 
 @media (max-width: 480px) {
+
+  .landing-page::before,
+  .landing-page::after {
+    width: 50px;
+  }
+
   .landing-page {
     padding: calc(2rem + 40px) 0.75rem;
+    background-size: 200% auto;
   }
 
   .image-grid {
