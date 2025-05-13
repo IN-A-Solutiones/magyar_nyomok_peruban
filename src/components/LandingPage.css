@@ -1,7 +1,7 @@
 .landing-page {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(240, 223, 145);
+  background-color: rgb(248, 237, 189);
   padding-top: calc(2rem + 70px);
   /* Account for navbar height */
   text-align: center;
