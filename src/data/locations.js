@@ -2,9 +2,9 @@ export const locations = [
   {
     id: "1",
     title: {
-      hu: "Perui magyar barátság emlékfala, Aguas Calientes, Peru",
-      es: "Mural de Amistad Hungría–Perú, Aguas Calientes, Perú",
-      qu: "Kuyanakuy muralñisqa Hungria–Peru, Aguas Calientes, Peru",
+      hu: "Perui magyar barátság emlékfala, Machupicchu község, Peru",
+      es: "Mural de Amistad Hungría–Perú, Machupicchu Pueblo, Perú",
+      qu: "Kuyanakuy muralñisqa Hungria–Peru, Machupicchu Pueblo, Peru",
     },
     description: {
       hu: "Magyar utalás egy falfestményen az inkák városánál.",
@@ -13,13 +13,13 @@ export const locations = [
     },
     image: "/images/mural_aguas_calientes.webp",
     coordinates: {
-      lat: -13.1588,
-      lng: -72.5314,
+      lat: -13.1547,
+      lng: -72.5228,
     },
     address: {
-      hu: "Aguas Calientes, Cusco régió, Peru",
-      es: "Aguas Calientes, Región Cusco, Perú",
-      qu: "Aguas Calientes, Cusco suyu, Piruw",
+      hu: "Machupicchu község, Cusco régió, Peru",
+      es: "Machupicchu Pueblo, Región Cusco, Perú",
+      qu: "Machupicchu Pueblo, Cusco suyu, Piruw",
     },
   },
   {

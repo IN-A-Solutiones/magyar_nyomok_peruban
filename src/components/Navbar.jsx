@@ -19,7 +19,7 @@ const Navbar = () => {
   const languages = [
     { code: "hu", label: "HU", fullLabel: "Magyar" },
     { code: "es", label: "ES", fullLabel: "Español" },
-    { code: "qu", label: "QU", fullLabel: "Quechua" },
+    { code: "qu", label: "QU", fullLabel: "Runa Simipi" },
   ];
 
   const changeLanguage = (lng) => {
