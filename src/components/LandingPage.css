@@ -401,6 +401,11 @@
     display: block;
   }
 
+  .about-content p {
+    width: 100%;
+    letter-spacing: -0.2px;
+  }
+
   .about-content::before,
   .about-content::after,
   .about-content .corner-top-right,
