@@ -17,9 +17,9 @@ const Navbar = () => {
   const hamburgerRef = useRef(null);
 
   const languages = [
-    { code: "hu", label: "HU", fullLabel: "Magyar" },
-    { code: "es", label: "ES", fullLabel: "Español" },
-    { code: "qu", label: "QU", fullLabel: "Runa Simipi" },
+    { code: "hu", label: "Magyar", fullLabel: "Magyar" },
+    { code: "es", label: "Español", fullLabel: "Español" },
+    { code: "qu", label: "Runa Simipi", fullLabel: "Runa Simipi" },
   ];
 
   const changeLanguage = (lng) => {

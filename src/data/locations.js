@@ -3,7 +3,7 @@ export const locations = [
     id: "1",
     title: {
       hu: "Perui magyar barátság emlékfala, Machupicchu község, Peru",
-      es: "Mural de Amistad Hungría–Perú, Machupicchu pueblo, Perú",
+      es: "Mural de Amistad Hungría–Perú, Machupicchu Pueblo, Perú",
       qu: "Kuyanakuy muralñisqa Hungria–Peru, Machupicchu llacta, Piruw",
     },
     description: {
@@ -18,7 +18,7 @@ export const locations = [
     },
     address: {
       hu: "Machupicchu község, Cusco régió, Peru",
-      es: "Machupicchu pueblo, Región Cusco, Perú",
+      es: "Machupicchu Pueblo, Región Cusco, Perú",
       qu: "Machupicchu llacta, Cusco suyu, Piruw",
     },
   },

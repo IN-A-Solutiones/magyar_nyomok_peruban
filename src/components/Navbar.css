@@ -25,6 +25,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  gap: 1rem;
 }
 
 .navbar-logo {
@@ -194,7 +195,7 @@
   cursor: pointer;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   transition: color 0.3s ease;
   min-width: 32px;
   text-align: center;
@@ -218,6 +219,23 @@
 
   .navbar-menu {
     gap: 1.5rem;
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .navbar-content {
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .desktop-language-selector {
+    margin-left: 0.5rem;
+  }
+
+  .language-button {
+    font-size: 1.1rem;
+    padding: 0.25rem 0.35rem;
   }
 }
 
