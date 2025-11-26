@@ -123,6 +123,7 @@
   z-index: 2;
 }
 
+
 .hero-section p {
   font-size: clamp(1.1rem, 3vw, 1.3rem);
   margin-bottom: 3rem;
