@@ -118,7 +118,7 @@ const Navbar = () => {
             </button>
             {isLocationsOpen && (
               <div className="dropdown-content">
-                {locations.slice(0, 1).map((location) => (
+                {locations.filter(loc => loc.id === "5" || loc.id === "1").map((location) => (
                   <Link
                     key={location.id}
                     to={`/${currentLanguage}/location/${location.id}`}
@@ -141,6 +141,22 @@ const Navbar = () => {
           >
             {t("nav.map")}
           </Link>
+          <div className="mobile-language-selector-in-menu">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                className={`language-button ${
+                  i18n.language === lang.code ? "active" : ""
+                }`}
+                onClick={() => {
+                  changeLanguage(lang.code);
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                {lang.fullLabel}
+              </button>
+            ))}
+          </div>
         </div>
         <div className="desktop-language-selector">
           {languages.map((lang) => (
@@ -155,19 +171,6 @@ const Navbar = () => {
             </button>
           ))}
         </div>
-      </div>
-      <div className="mobile-language-selector">
-        {languages.map((lang) => (
-          <button
-            key={lang.code}
-            className={`language-button ${
-              i18n.language === lang.code ? "active" : ""
-            }`}
-            onClick={() => changeLanguage(lang.code)}
-          >
-            {lang.fullLabel}
-          </button>
-        ))}
       </div>
     </nav>
   );

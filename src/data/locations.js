@@ -1,5 +1,28 @@
 export const locations = [
   {
+    id: "5",
+    title: {
+      hu: "A perui magyarok: történeti bevezetés",
+      es: "Los húngaros en el Perú: introducción histórica",
+      qu: "Perupi Ungriya runakuna: ñawpa kawsaymantaraq willakuy",
+    },
+    description: {
+      hu: "A perui magyar közösség története és személyes történetek.",
+      es: "Historia de la comunidad húngara en Perú e historias personales.",
+      qu: "Perupi Ungriya llaktakunapa kawsayninwan runapa willakunkunawan.",
+    },
+    image: "/images/perui_magyarok_tortenet.webp",
+    coordinates: {
+      lat: -12.0464,
+      lng: -77.0301,
+    },
+    address: {
+      hu: "Avenida Jorge Basadre Grohmann 1580, San Isidro, 15073, Lima",
+      es: "Avenida Jorge Basadre Grohmann 1580, San Isidro, 15073, Lima",
+      qu: "Avenida Jorge Basadre Grohmann 1580, San Isidro, 15073, Lima",
+    },
+  },
+  {
     id: "1",
     title: {
       hu: "Perui magyar barátság emlékfala, Machupicchu község, Peru",

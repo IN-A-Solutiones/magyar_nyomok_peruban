@@ -82,5 +82,69 @@
     "terms": "Usokuna termino",
     "followUs": "Qatiway",
     "design": "Diseño y desarrollo"
+  },
+  "hungarianCommunity": {
+    "title": "Perupi Ungriya runakuna: ñawpa kawsaymantaraq willakuy",
+    "historical": {
+      "title": "Ñawpa kawsaymantaraq willakuy",
+      "intro1": "T'ikray wasiyachkaq",
+      "intro2": "T'ikray wasiyachkaq",
+      "intro3": "T'ikray wasiyachkaq",
+      "intro4": "T'ikray wasiyachkaq",
+      "intro5": "T'ikray wasiyachkaq",
+      "intro6": "T'ikray wasiyachkaq",
+      "intro7": "T'ikray wasiyachkaq",
+      "intro8": "T'ikray wasiyachkaq",
+      "intro9": "T'ikray wasiyachkaq",
+      "intro10": "T'ikray wasiyachkaq",
+      "intro11": "T'ikray wasiyachkaq",
+      "intro12": "T'ikray wasiyachkaq",
+      "intro13": "T'ikray wasiyachkaq",
+      "intro14": "T'ikray wasiyachkaq",
+      "intro15": "T'ikray wasiyachkaq"
+    },
+    "personalStories": {
+      "title": "Runapa willakunkuna",
+      "schoffer": {
+        "title": "Schöffer ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "kadar": {
+        "title": "Kádár ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "david": {
+        "title": "Dávid Béla chaymanta ayllun",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "vajda": {
+        "title": "Vajda Széchenyi ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "szabo": {
+        "title": "Szabó ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "csorgey": {
+        "title": "Csörgey-Egry ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "ternyik": {
+        "title": "Ternyik ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "bajak": {
+        "title": "Baják ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "orsos": {
+        "title": "Orsós ayllu",
+        "description": "T'ikray wasiyachkaq"
+      },
+      "krauss": {
+        "title": "Krauss ayllu",
+        "description": "T'ikray wasiyachkaq"
+      }
+    }
   }
 } 

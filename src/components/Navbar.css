@@ -188,6 +188,10 @@
   z-index: 1000;
 }
 
+.mobile-language-selector-in-menu {
+  display: none;
+}
+
 .language-button {
   background: none;
   border: none;
@@ -287,7 +291,40 @@
   }
 
   .mobile-language-selector {
+    display: none;
+  }
+  
+  .mobile-language-selector-in-menu {
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobile-language-selector-in-menu .language-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    min-width: auto;
+    white-space: nowrap;
+  }
+  
+  .mobile-language-selector-in-menu .language-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .mobile-language-selector-in-menu .language-button.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
   }
 }
 
