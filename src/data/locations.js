@@ -2,8 +2,8 @@ export const locations = [
   {
     id: "5",
     title: {
-      hu: "A perui magyarok: történeti bevezetés",
-      es: "Los húngaros en el Perú: introducción histórica",
+      hu: "A perui magyarok emlékfala",
+      es: "Homenaje a los húngaros en el Perú",
       qu: "Perupi Ungriya runakuna: ñawpa kawsaymantaraq willakuy",
     },
     description: {
