@@ -44,6 +44,35 @@ const ImageDetail = () => {
     },
   };
 
+  // Scroll to section function
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 100; // Offset for navbar
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Family names list for location 5
+  const familyNames = [
+    { id: "schoffer", key: "schoffer" },
+    { id: "kadar", key: "kadar" },
+    { id: "david", key: "david" },
+    { id: "vajda", key: "vajda" },
+    { id: "szabo", key: "szabo" },
+    { id: "csorgey", key: "csorgey" },
+    { id: "ternyik", key: "ternyik" },
+    { id: "bajak", key: "bajak" },
+    { id: "orsos", key: "orsos" },
+    { id: "krauss", key: "krauss" },
+  ];
+
   const imageDetails = {
     1: {
       title: t("imageDetails.title"),
@@ -118,6 +147,18 @@ const ImageDetail = () => {
       inlineImage: "/images/MuralApellidosF.webp",
       description: (
         <div className="image-description">
+          <div className="family-names-list">
+            {familyNames.map((family) => (
+              <button
+                key={family.id}
+                className="family-name-link"
+                onClick={() => scrollToSection(`family-${family.id}`)}
+              >
+                {t(`hungarianCommunity.personalStories.${family.key}.title`)}
+              </button>
+            ))}
+          </div>
+
           <h3>{t("hungarianCommunity.historical.title")}</h3>
           <p>{t("hungarianCommunity.historical.intro1")}</p>
           <p>{t("hungarianCommunity.historical.intro2")}</p>
@@ -137,34 +178,34 @@ const ImageDetail = () => {
 
           <h3>{t("hungarianCommunity.personalStories.title")}</h3>
 
-          <h4>{t("hungarianCommunity.personalStories.schoffer.title")}</h4>
+          <h4 id="family-schoffer">{t("hungarianCommunity.personalStories.schoffer.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.schoffer.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.kadar.title")}</h4>
+          <h4 id="family-kadar">{t("hungarianCommunity.personalStories.kadar.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.kadar.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.david.title")}</h4>
+          <h4 id="family-david">{t("hungarianCommunity.personalStories.david.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.david.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.vajda.title")}</h4>
+          <h4 id="family-vajda">{t("hungarianCommunity.personalStories.vajda.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.vajda.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.szabo.title")}</h4>
+          <h4 id="family-szabo">{t("hungarianCommunity.personalStories.szabo.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.szabo.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.csorgey.title")}</h4>
+          <h4 id="family-csorgey">{t("hungarianCommunity.personalStories.csorgey.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.csorgey.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.ternyik.title")}</h4>
+          <h4 id="family-ternyik">{t("hungarianCommunity.personalStories.ternyik.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.ternyik.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.bajak.title")}</h4>
+          <h4 id="family-bajak">{t("hungarianCommunity.personalStories.bajak.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.bajak.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.orsos.title")}</h4>
+          <h4 id="family-orsos">{t("hungarianCommunity.personalStories.orsos.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.orsos.description")}</p>
 
-          <h4>{t("hungarianCommunity.personalStories.krauss.title")}</h4>
+          <h4 id="family-krauss">{t("hungarianCommunity.personalStories.krauss.title")}</h4>
           <p>{t("hungarianCommunity.personalStories.krauss.description")}</p>
         </div>
       ),

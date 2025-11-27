@@ -185,6 +185,45 @@
   margin: 2.5rem 0 1.2rem;
   font-weight: 600;
   text-align: left;
+  scroll-margin-top: 100px; /* Offset for smooth scrolling */
+}
+
+.family-names-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.family-name-link {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.family-name-link:hover {
+  background-color: var(--secondary-color, #c9a961);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.family-name-link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons-container {
@@ -308,6 +347,16 @@
     font-size: 2.2rem;
   }
 
+  .family-names-list {
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .family-name-link {
+    padding: 0.6rem 1.2rem;
+    font-size: clamp(0.85rem, 1.8vw, 1rem);
+  }
+
   .image-info .corner-top-left,
   .image-info .corner-top-right,
   .image-info .corner-bottom-left,
@@ -355,6 +404,16 @@
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
     margin-top: 2rem;
     margin-bottom: 1rem;
+  }
+
+  .family-names-list {
+    gap: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .family-name-link {
+    padding: 0.5rem 1rem;
+    font-size: clamp(0.8rem, 1.6vw, 0.95rem);
   }
 
   .social-icons {
